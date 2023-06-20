@@ -1,0 +1,35 @@
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="form-group">
+                <label for="source">Source</label>
+                <input type="text" name="source" [(ngModel)]="source" list="cities" class="form-control" placeholder="Enter the Source">
+                <datalist id="cities">
+                    <option *ngFor="let city of cities" value="{{city}}">
+                </datalist>
+            </div>
+
+            <div class="center-align">
+                <button type="button" id="exchange" class="btn btn-dark" (click)="exchangeValues()"><i class="bi bi-arrow-down-up"></i></button>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" name="destination" [(ngModel)]="destination" list="cities" class="form-control" placeholder="Enter the Destination">
+                <datalist id="cities">
+                    <option *ngFor="let city of cities" value="{{city}}">
+                </datalist>
+
+                <label for="date">Date</label>
+                <input type="date" name="date" class="form-control">
+
+                <label for="passenger">Passenger Count</label>
+                <input type="number" name="passenger" class="form-control" placeholder="Enter the Passenger Count">
+            </div>
+
+            <div class="center-align">
+                <button type="button" class="btn btn-dark"><i class="bi bi-search"></i> Search Flights</button>
+            </div>
+        </div>
+    </form>
+</div>

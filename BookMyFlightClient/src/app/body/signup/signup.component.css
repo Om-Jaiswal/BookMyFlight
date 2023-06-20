@@ -1,0 +1,30 @@
+.container{
+    background-color: #ffffff !important;
+    border-radius: 10px;
+    float: right;
+    margin: 50px;
+    padding: 50px;
+    width: fit-content;
+}
+
+.container .form-group label {
+    margin-top: 30px;
+}
+
+.container .center-align {
+    text-align: center;
+}
+
+.container .center-align button {
+    margin: 24px 10px 0px 10px;
+    padding-bottom: 30px;
+    height: 30px;
+}
+
+.container .center-align p {
+    padding-top: 20px;
+}
+
+.container .center-align p a {
+    text-decoration: none;
+}
