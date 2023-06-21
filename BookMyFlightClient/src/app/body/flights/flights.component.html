@@ -1,0 +1,8 @@
+<p>{{ preFlightData['source'] }}</p>
+<p>{{ preFlightData['destination'] }}</p>
+<p>{{ preFlightData['date'] }}</p>
+<p>{{ preFlightData['passenger'] }}</p>
+
+<ul>
+    <li *ngFor="let flight of flights">{{ flight.flightNumber }}</li>
+  </ul>

@@ -1,9 +1,9 @@
 <div class="container">
-    <form>
+    <form (ngSubmit) = "onSubmit()">
         <div class="row">
             <div class="form-group">
                 <label for="source">Source</label>
-                <input type="text" name="source" [(ngModel)]="source" list="cities" class="form-control" placeholder="Enter the Source">
+                <input type="text" name="source" [(ngModel)]="data.source" list="cities" class="form-control" placeholder="Enter the Source" required>
                 <datalist id="cities">
                     <option *ngFor="let city of cities" value="{{city}}">
                 </datalist>
@@ -15,20 +15,20 @@
 
             <div class="form-group">
                 <label for="destination">Destination</label>
-                <input type="text" name="destination" [(ngModel)]="destination" list="cities" class="form-control" placeholder="Enter the Destination">
+                <input type="text" name="destination" [(ngModel)]="data.destination" list="cities" class="form-control" placeholder="Enter the Destination" required>
                 <datalist id="cities">
                     <option *ngFor="let city of cities" value="{{city}}">
                 </datalist>
 
                 <label for="date">Date</label>
-                <input type="date" name="date" class="form-control">
+                <input type="date" name="date" [(ngModel)]="data.date" class="form-control" required>
 
                 <label for="passenger">Passenger Count</label>
-                <input type="number" name="passenger" class="form-control" placeholder="Enter the Passenger Count">
+                <input type="number" name="passenger" [(ngModel)]="data.passenger" class="form-control" placeholder="Enter the Passenger Count" required>
             </div>
 
             <div class="center-align">
-                <button type="button" class="btn btn-dark"><i class="bi bi-search"></i> Search Flights</button>
+                <button type="submit" class="btn btn-dark"><i class="bi bi-search"></i> Search Flights</button>
             </div>
         </div>
     </form>

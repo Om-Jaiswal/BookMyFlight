@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { Flight } from './model/flight';
 
 @Injectable()
 export class AppService {
@@ -15,7 +17,7 @@ export class AppService {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     const credentials = { username: username, password: password };
 
-    this.http.post('http://localhost:8080/bmf/login', credentials, { headers: headers, responseType: 'text' })
+    this.http.post('http://localhost:8000/bmf/login', credentials, { headers: headers, responseType: 'text' })
       .subscribe(
         (response: string) => {
           this.token = response;
@@ -32,7 +34,7 @@ export class AppService {
   signout(): void {
     const token = sessionStorage.getItem('token');
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-    this.http.post('http://localhost:8080/bmf/logout', null, { headers })
+    this.http.post('http://localhost:8000/bmf/logout', null, { headers })
       .subscribe(
         () => {
           this.token = '';
@@ -48,6 +50,10 @@ export class AppService {
 
   isAuthenticated(): boolean {
     return this.authenticated;
+  }
+
+  getAllFlights(): Observable<Flight[]> {
+    return this.http.get<Flight[]>('http://localhost:8000/all-flights');
   }
 
 }
