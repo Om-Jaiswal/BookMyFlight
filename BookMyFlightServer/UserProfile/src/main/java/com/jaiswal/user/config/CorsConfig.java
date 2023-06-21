@@ -1,4 +1,4 @@
-package com.jaiswal.user.configuration;
+package com.jaiswal.user.config;
 
 import java.util.Arrays;
 
