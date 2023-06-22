@@ -17,6 +17,8 @@ import { SigninComponent } from './body/signin/signin.component';
 import { SignupComponent } from './body/signup/signup.component';
 import { FlightsComponent } from './body/flights/flights.component';
 import { BookingComponent } from './body/booking/booking.component';
+import { OffersComponent } from './body/offers/offers.component';
+import { ContactComponent } from './body/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { BookingComponent } from './body/booking/booking.component';
     SigninComponent,
     SignupComponent,
     FlightsComponent,
-    BookingComponent
+    BookingComponent,
+    OffersComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container footer {
+    background-color: #ffffff !important;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 0;
+    width: fit-content;
+    height: 56px;
+    margin-bottom: 15px;
+}
+
+.container footer p {
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
