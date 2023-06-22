@@ -9,15 +9,33 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import com.jaiswal.user.bean.User;
+import com.jaiswal.user.repository.UserRepository;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+	
+	@Autowired
+    private UserRepository userRepository;
 
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication()
-            .withUser("admin").password("{noop}admin123").roles("USER");
+	@Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(username -> {
+            User user = userRepository.findByUsername(username);
+            if (user != null) {
+                return org.springframework.security.core.userdetails.User.builder()
+                        .username(user.getUsername())
+                        .password(user.getPassword())
+                        .roles(user.getRoles().toArray(new String[0]))
+                        .build();
+            } else {
+                throw new UsernameNotFoundException("User Not Found!");
+            }
+        }).passwordEncoder(new BCryptPasswordEncoder());
     }
 
     @Override
@@ -27,6 +45,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .authorizeRequests()
             .antMatchers(HttpMethod.POST, "/user-profile/login").permitAll()
             .antMatchers(HttpMethod.POST, "/user-profile/logout").permitAll()
+            .antMatchers(HttpMethod.POST, "/user-profile/signup").permitAll()
             .anyRequest().authenticated()
             .and()
             .httpBasic();
@@ -37,4 +56,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	public AuthenticationManager authenticationManagerBean() throws Exception {
 		return super.authenticationManagerBean();
 	}
+    
 }

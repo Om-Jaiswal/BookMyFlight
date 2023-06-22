@@ -3,12 +3,10 @@ package com.jaiswal.user.bean;
 public class UserCredentials {
 
 	private String username;
-
 	private String password;
 
 	public UserCredentials() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public UserCredentials(String username, String password) {
@@ -32,4 +30,5 @@ public class UserCredentials {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
 }

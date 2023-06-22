@@ -1,7 +1,8 @@
-package com.jaiswal.user.controller;
+package com.jaiswal.user.service;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -9,29 +10,30 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Service;
 
+import com.jaiswal.user.bean.User;
 import com.jaiswal.user.bean.UserCredentials;
+import com.jaiswal.user.repository.UserRepository;
 import com.jaiswal.user.util.JwtTokenUtil;
+import com.jaiswal.user.util.PasswordEncoderUtil;
 
-@RestController
-@RequestMapping("/user-profile")
-public class LoginController {
-
-    private final AuthenticationManager authenticationManager;
+@Service
+public class UserServiceImpl implements UserService {
+	
+	private final AuthenticationManager authenticationManager;
     private final JwtTokenUtil jwtTokenUtil;
-
-    public LoginController(AuthenticationManager authenticationManager, JwtTokenUtil jwtTokenUtil) {
+    
+    public UserServiceImpl(AuthenticationManager authenticationManager, JwtTokenUtil jwtTokenUtil) {
         this.authenticationManager = authenticationManager;
         this.jwtTokenUtil = jwtTokenUtil;
     }
-
-    @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestBody UserCredentials credentials) {
-        UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(credentials.getUsername(), credentials.getPassword());
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	public ResponseEntity<String> login(UserCredentials credentials) {
+		UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(credentials.getUsername(), credentials.getPassword());
         Authentication authentication = authenticationManager.authenticate(token);
         SecurityContextHolder.getContext().setAuthentication(authentication);
         
@@ -39,11 +41,10 @@ public class LoginController {
         UserDetails userDetails = (UserDetails) authentication.getPrincipal();
         String jwtToken = jwtTokenUtil.generateToken(userDetails);
         return ResponseEntity.ok(jwtToken);
-    }
-
-    @PostMapping("/logout")
-    public ResponseEntity<String> logout(HttpServletRequest request) {
-    	// Extract the JWT token from the request
+	}
+	
+	public ResponseEntity<String> logout(HttpServletRequest request) {
+		// Extract the JWT token from the request
         String token = jwtTokenUtil.extractJwtToken(request);
 
         // Validate and invalidate the JWT token
@@ -53,6 +54,21 @@ public class LoginController {
         }
 
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid Token!");
-    }
-   
+	}
+	
+	public ResponseEntity<String> signup(UserCredentials credentials) {
+		User user = new User();
+		
+		user.setUsername(credentials.getUsername());
+		
+		String encryptedPassword = PasswordEncoderUtil.encodePassword(credentials.getPassword());
+		user.setPassword(encryptedPassword);
+		
+		user.addRole("USER");
+		
+		userRepository.save(user);
+		
+		return ResponseEntity.ok("User Added Successfully!");
+	}
+	
 }

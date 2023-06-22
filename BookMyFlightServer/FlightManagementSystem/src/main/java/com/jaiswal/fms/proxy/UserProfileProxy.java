@@ -17,5 +17,8 @@ public interface UserProfileProxy {
 	
 	@PostMapping("/user-profile/logout")
     public ResponseEntity<String> logout(HttpServletRequest request);
+	
+	@PostMapping("/user-profile/signup")
+    public ResponseEntity<String> signup(@RequestBody UserCredentials credentials);
 
 }

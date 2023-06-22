@@ -37,3 +37,199 @@
 2023-06-21 12:39:33,415 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
 2023-06-21 12:39:58,081 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:62] All Aiports Fetched!
 2023-06-21 12:40:16,961 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 16:09:43,840 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 16:21:38,857 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 16:31:47,304 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 16:31:52,652 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 16:33:39,870 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 16:34:03,489 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 16:49:20,680 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 16:56:15,620 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 17:01:10,107 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 17:01:14,009 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 17:01:24,111 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 17:01:44,782 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 17:07:21,714 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:47] Flights Added Successfully!
+2023-06-21 17:07:32,286 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 17:07:44,867 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 18:41:14,948 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 18:41:41,037 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:08:58,220 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:09:12,086 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:12:20,017 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:13:28,970 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:13:39,952 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:16:24,767 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:16:39,818 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:30:21,786 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:30:34,146 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:31:48,506 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:31:59,071 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:32:33,483 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:32:42,996 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:33:01,955 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:33:12,149 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:42:32,182 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:42:42,077 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:44:02,145 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:44:11,847 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:44:13,776 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:44:15,954 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:48:18,361 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:48:28,105 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:48:47,949 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:48:52,393 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:53:44,546 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:53:54,588 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 19:55:50,567 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 19:56:00,810 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:01:53,407 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:02:04,499 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:03:09,855 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:03:45,349 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:16:11,117 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:16:24,648 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:27:27,114 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:27:37,577 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:28:14,162 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:28:27,969 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:34:37,302 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:34:49,647 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:35:07,098 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:35:09,231 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:38:17,252 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:38:30,198 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:39:08,621 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:39:19,453 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:40:26,817 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:40:38,485 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:41:38,170 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:41:48,120 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:42:22,004 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:42:38,547 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:43:40,253 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:43:51,920 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:44:50,553 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:45:01,706 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:45:35,373 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:45:37,618 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:48:59,498 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:49:10,664 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:56:21,063 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:56:30,924 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:57:27,953 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:57:45,020 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:58:09,875 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:58:21,334 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 20:59:04,830 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 20:59:14,447 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:03:00,281 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:03:10,225 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:04:40,917 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:04:50,843 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:04:57,447 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:04:59,607 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:05:41,530 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:06:06,964 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:10:46,693 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:10:56,702 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:12:52,474 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:13:03,199 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:16:27,318 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:16:36,662 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:22:32,544 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:22:41,665 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:39:37,209 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:39:46,950 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:48:55,458 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:49:05,516 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:53:05,566 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:53:18,454 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:54:22,711 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:54:33,564 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 21:57:00,073 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 21:57:16,662 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 22:04:54,497 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 22:05:08,320 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 22:10:06,932 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 22:10:24,445 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 22:12:02,074 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 22:12:15,788 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 22:14:14,441 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 22:14:38,097 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 22:17:58,368 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 22:18:15,077 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 22:23:13,785 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 22:23:33,326 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 22:27:20,785 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 22:27:36,263 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 22:30:50,613 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 22:31:01,234 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 22:49:42,917 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 22:50:20,780 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-21 22:55:04,581 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-21 23:50:42,995 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:10:03,189 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:10:40,567 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:10:47,162 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:10:47,288 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:10:53,411 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:11:24,674 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:11:38,517 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 00:15:41,110 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:15:49,814 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 00:17:48,256 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:18:19,467 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 00:22:32,774 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:22:49,148 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 00:24:05,103 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:24:17,465 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 00:25:44,962 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:25:59,298 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 00:26:58,018 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:27:08,765 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 00:35:27,123 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 00:35:46,682 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 01:04:34,652 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 01:05:03,372 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 01:18:39,779 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 01:18:50,519 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 01:39:15,410 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 01:39:33,102 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 01:48:51,423 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 02:06:18,267 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 02:09:54,769 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 02:09:58,081 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 02:09:58,190 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 02:10:00,522 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 02:10:10,070 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 02:10:47,060 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 02:32:51,181 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 02:33:01,450 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 02:35:32,606 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 02:35:46,229 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 02:39:47,354 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 02:39:56,862 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 02:41:29,719 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 02:41:43,143 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 02:44:28,534 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 02:56:48,610 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 02:56:50,924 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 12:46:08,582 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 12:46:49,313 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 12:47:22,519 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 12:48:05,486 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 12:59:41,636 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 15:02:27,600 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 15:03:07,785 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 15:03:20,417 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-22 15:03:45,951 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 15:03:48,340 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 15:03:50,766 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 17:51:15,200 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 18:04:20,943 WARN [http-nio-8100-exec-7] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 18:04:33,397 WARN [http-nio-8100-exec-8] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 18:08:47,189 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 18:09:05,893 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 19:52:37,263 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-22 19:53:26,760 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
