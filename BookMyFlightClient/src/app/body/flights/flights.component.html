@@ -1,8 +1,44 @@
-<p>{{ preFlightData['source'] }}</p>
-<p>{{ preFlightData['destination'] }}</p>
-<p>{{ preFlightData['date'] }}</p>
-<p>{{ preFlightData['passenger'] }}</p>
-
-<ul>
-    <li *ngFor="let flight of flights">{{ flight.flightNumber }}</li>
-  </ul>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="alert alert-success" role="alert">
+        Note: Select a flight from available flights to confirm your booking.
+      </div>
+      <div class="card round-border">
+        <div class="card-body black-border">
+          <h5 class="card-title">Travel Details</h5>
+          <p class="card-text"><strong>Source:</strong></p>
+          <ul>
+            <li><strong>IATA Code: </strong>{{ source.iataCode }}</li>
+            <li><strong>City: </strong>{{ source.airportCity }}</li>
+            <li><strong>Airport: </strong>{{ source.airportName }}</li>
+          </ul>
+          <p class="card-text"><strong>Destination:</strong></p>
+          <ul>
+            <li><strong>IATA Code: </strong>{{ destination.iataCode }}</li>
+            <li><strong>City: </strong>{{ destination.airportCity }}</li>
+            <li><strong>Airport: </strong>{{ destination.airportName }}</li>
+          </ul>
+          <p class="card-text"><strong>Date: </strong>{{ flight.date }}</p>
+          <p class="card-text"><strong>Passenger Count: </strong>{{ flight.passengerCount }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm flight-cards" tabindex="0">
+      <div *ngFor="let flight of flights" class="card" style="width: 18rem;">
+        <img src="assets/flight.png" class="card-img-top" alt="Flight">
+        <div class="card-body">
+          <h5 class="card-title">Airline: <span id="airline">{{ flight.airline }}</span></h5>
+          <p class="card-text"><i class="bi bi-alarm"></i> <span id="departureTime">{{ flight.departureTime }}</span> - <span id="arrivalTime">{{ flight.arrivalTime }}</span></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Flight Number: <span id="flightNumber">{{ flight.flightNumber }}</span></li>
+          <li class="list-group-item">Status: <span id="status">{{ flight.status }}</span></li>
+        </ul>
+        <div class="card-body d-flex justify-content-center">
+          <button type="button" (click)="bookTicket()" class="btn btn-dark">Book Ticket</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -11,6 +11,11 @@
     margin-top: 30px;
 }
 
+.container .form-group .vaild-message {
+    color: #494242;
+    font-size: 12px;
+}
+
 .container .center-align {
     text-align: center;
 }

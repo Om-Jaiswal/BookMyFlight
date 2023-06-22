@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class HomeComponent implements OnInit {
   cities: string[] = [];
 
-  data: { source: string, destination: string, date: string, passenger: number} = { source: '', destination: '', date: '', passenger: NaN};
+  data: { source: string, destination: string, date: string, passenger: number } = { source: '', destination: '', date: '', passenger: NaN};
 
   constructor(private router: Router, private http: HttpClient) {}
 

@@ -52,6 +52,20 @@ export class AppService {
     return this.authenticated;
   }
 
+  signup(username: string, password: string): void {
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    const credentials = { username: username, password: password };
+    this.http.post('http://localhost:8000/bmf/signup', credentials, { headers: headers, responseType: 'text' })
+    .subscribe(
+      (response: string) => {
+        this.router.navigate(['/signin']);
+      },
+      error => {
+        console.error('Signup failed:', error);
+      }
+    );
+  }
+
   getAllFlights(): Observable<Flight[]> {
     return this.http.get<Flight[]>('http://localhost:8000/all-flights');
   }

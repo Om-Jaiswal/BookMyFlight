@@ -16,6 +16,7 @@ import { HomeComponent } from './body/home/home.component';
 import { SigninComponent } from './body/signin/signin.component';
 import { SignupComponent } from './body/signup/signup.component';
 import { FlightsComponent } from './body/flights/flights.component';
+import { BookingComponent } from './body/booking/booking.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FlightsComponent } from './body/flights/flights.component';
     HomeComponent,
     SigninComponent,
     SignupComponent,
-    FlightsComponent
+    FlightsComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,

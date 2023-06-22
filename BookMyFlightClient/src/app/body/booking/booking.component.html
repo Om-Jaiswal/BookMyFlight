@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card round-border">
+          <div class="card-body black-border">
+            <h5 class="card-title">Travel Details</h5>
+            <p class="card-text"><strong>Source:</strong></p>
+            <ul>
+              <li><strong>IATA Code: </strong>{{ booking.source.iataCode }}</li>
+              <li><strong>City: </strong>{{ booking.source.airportCity }}</li>
+              <li><strong>Airport: </strong>{{ booking.source.airportName }}</li>
+            </ul>
+            <p class="card-text"><strong>Destination:</strong></p>
+            <ul>
+              <li><strong>IATA Code: </strong>{{ booking.destination.iataCode }}</li>
+              <li><strong>City: </strong>{{ booking.destination.airportCity }}</li>
+              <li><strong>Airport: </strong>{{ booking.destination.airportName }}</li>
+            </ul>
+            <p class="card-text"><strong>Date: </strong>{{ booking.flight.date }}</p>
+            <p class="card-text"><strong>Passenger Count: </strong>{{ booking.flight.passengerCount }}</p>
+          </div>
+        </div>
+        <div class="card round-border">
+            <div class="card-body black-border">
+              <h5 class="card-title">Flight Details</h5>
+              <p class="card-text"><strong>Flight Number: </strong>{{ booking.flight.flightNumber }}</p>
+              <p class="card-text"><strong>Airline: </strong>{{ booking.flight.airline }}</p>
+              <p class="card-text"><strong>Time: </strong>{{ booking.flight.departureTime }} - {{ booking.flight.arrivalTime }}</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-success" role="alert">
+            Note: Please confirm your user details to book a flight.
+        </div>
+        <div class="card round-border">
+            <div class="card-body black-border">
+                <form>
+                    <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                    <label for="mobile" class="form-label">Mobile No.</label>
+                    <input type="phone" name="mobile" class="form-control" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                    <input type="checkbox" name="confirm" class="form-check-input" required>
+                    <label for="confirm" class="form-check-label">I Agree to All Terms.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Pay Now</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

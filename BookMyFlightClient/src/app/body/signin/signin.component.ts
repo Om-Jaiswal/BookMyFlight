@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
 import { AppService } from '../../app.service';
 
 
@@ -9,11 +9,22 @@ import { AppService } from '../../app.service';
   styleUrls: ['./signin.component.css']
 })
 export class SigninComponent {
-  user: { username: string, password: string } = { username: '', password: '' };
 
-  constructor(private service: AppService, private router: Router) { }
+  fail: boolean = false;
+  message: string = '';
 
-  signin() {
-    this.service.signin(this.user.username, this.user.password);
+  constructor(private service: AppService) { }
+
+  signin(form: NgForm) {
+    if (form.valid) {
+      const username = form.value.username;
+      const password = form.value.password;
+
+      this.service.signin(username, password);
+
+      if(!this.service.isAuthenticated()) {
+        this.fail = true;
+      }
+    }
   }
 }
