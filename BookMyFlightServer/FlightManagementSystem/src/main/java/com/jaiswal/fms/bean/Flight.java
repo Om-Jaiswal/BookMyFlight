@@ -1,7 +1,8 @@
 package com.jaiswal.fms.bean;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,13 +11,21 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Document(collection="flights")
 public class Flight {
 	
-	@Id
-	private String flightNumber;
+private String flightNumber;
+	
 	private String departureTime;
+	
 	private String arrivalTime;
+	
 	private String airline;
+	
+	@JsonFormat(pattern = "dd-MM-yyyy")
+	private Date date;
+	
 	private String status;
+	
+	private double price;
+	
 }

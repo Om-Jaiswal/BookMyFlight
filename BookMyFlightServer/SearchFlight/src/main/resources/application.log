@@ -233,3 +233,114 @@
 2023-06-22 18:09:05,893 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
 2023-06-22 19:52:37,263 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
 2023-06-22 19:53:26,760 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-23 18:20:07,892 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-23 18:20:07,900 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-23 18:20:08,073 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-23 18:20:08,195 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-23 18:20:08,350 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-23 18:20:20,207 WARN [http-nio-8100-exec-6] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-23 18:23:34,716 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-23 18:54:54,646 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:35] Airports Added Successfully!
+2023-06-23 18:54:54,650 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-23 18:54:54,651 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:62] All Aiports Fetched!
+2023-06-23 18:54:54,652 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:29] Airport Added Successfully!
+2023-06-23 18:54:54,653 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:47] Flights Added Successfully!
+2023-06-23 18:54:54,654 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-23 18:54:54,655 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:41] Flight Added Successfully!
+2023-06-23 18:55:49,692 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:35] Airports Added Successfully!
+2023-06-23 18:55:49,695 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-23 18:55:49,696 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:62] All Aiports Fetched!
+2023-06-23 18:55:49,698 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:29] Airport Added Successfully!
+2023-06-23 18:55:49,699 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:47] Flights Added Successfully!
+2023-06-23 18:55:49,700 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-23 18:55:49,701 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:41] Flight Added Successfully!
+2023-06-23 18:58:09,888 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:35] Airports Added Successfully!
+2023-06-23 18:58:09,891 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-23 18:58:09,892 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:62] All Aiports Fetched!
+2023-06-23 18:58:09,894 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:29] Airport Added Successfully!
+2023-06-23 18:58:09,894 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:47] Flights Added Successfully!
+2023-06-23 18:58:09,896 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-23 18:58:09,896 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:41] Flight Added Successfully!
+2023-06-23 19:07:09,594 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:35] Airports Added Successfully!
+2023-06-23 19:07:09,598 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-23 19:07:09,599 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:62] All Aiports Fetched!
+2023-06-23 19:07:09,600 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:29] Airport Added Successfully!
+2023-06-23 19:07:09,601 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:47] Flights Added Successfully!
+2023-06-23 19:07:09,602 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-23 19:07:09,603 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:41] Flight Added Successfully!
+2023-06-23 19:12:06,869 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:35] Airports Added Successfully!
+2023-06-23 19:12:06,873 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:67] All Flights Fetched!
+2023-06-23 19:12:06,874 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:62] All Aiports Fetched!
+2023-06-23 19:12:06,875 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:29] Airport Added Successfully!
+2023-06-23 19:12:06,877 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:47] Flights Added Successfully!
+2023-06-23 19:12:06,878 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:57] Cities Code Retrieved Successfully!
+2023-06-23 19:12:06,879 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:41] Flight Added Successfully!
+2023-06-23 20:04:25,690 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:47] Flights Added Successfully!
+2023-06-23 20:43:00,627 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:48] Flights Added Successfully!
+2023-06-23 20:45:16,295 WARN [http-nio-8100-exec-9] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:73] Flights By Date Fetched!
+2023-06-23 20:45:55,651 WARN [http-nio-8100-exec-10] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:73] Flights By Date Fetched!
+2023-06-23 20:49:32,259 WARN [http-nio-8100-exec-2] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:73] Flights By Date Fetched!
+2023-06-23 20:50:13,039 WARN [http-nio-8100-exec-3] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:48] Flights Added Successfully!
+2023-06-23 20:50:55,306 WARN [http-nio-8100-exec-4] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:73] Flights By Date Fetched!
+2023-06-23 21:31:53,867 WARN [http-nio-8100-exec-1] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:48] Flights Added Successfully!
+2023-06-23 21:33:16,075 WARN [http-nio-8100-exec-5] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:73] Flights By Date Fetched!
+2023-06-24 01:16:35,614 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:48] Airports Added Successfully!
+2023-06-24 01:16:35,624 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:111] Flights By Date Fetched!
+2023-06-24 01:16:35,626 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:102] All Flights Fetched!
+2023-06-24 01:16:35,627 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:93] All Aiports Fetched!
+2023-06-24 01:16:35,628 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:37] Airport Added Successfully!
+2023-06-24 01:16:35,631 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:70] Flights Added Successfully!
+2023-06-24 01:16:35,632 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:84] Cities Code Retrieved Successfully!
+2023-06-24 01:16:35,634 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:59] Flight Added Successfully!
+2023-06-24 01:36:10,910 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:48] Airports Added Successfully!
+2023-06-24 01:36:10,918 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:140] UPDATE FAIL: Chhatrapati Shivaji Intl  airport does not exist!
+2023-06-24 01:36:10,921 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:111] Flights By Date Fetched!
+2023-06-24 01:36:10,923 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:102] All Flights Fetched!
+2023-06-24 01:36:10,924 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:93] All Aiports Fetched!
+2023-06-24 01:36:10,926 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:37] Airport Added Successfully!
+2023-06-24 01:36:10,928 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:168] UPDATE FAIL: Flight number ABC123 does not exist!
+2023-06-24 01:36:10,929 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:70] Flights Added Successfully!
+2023-06-24 01:36:10,930 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:84] Cities Code Retrieved Successfully!
+2023-06-24 01:36:10,931 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:59] Flight Added Successfully!
+2023-06-24 01:38:24,703 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:48] Airports Added Successfully!
+2023-06-24 01:38:24,711 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:140] UPDATE FAIL: Chhatrapati Shivaji Intl  airport does not exist!
+2023-06-24 01:38:24,714 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:111] Flights By Date Fetched!
+2023-06-24 01:38:24,717 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:102] All Flights Fetched!
+2023-06-24 01:38:24,719 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:93] All Aiports Fetched!
+2023-06-24 01:38:24,720 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:37] Airport Added Successfully!
+2023-06-24 01:38:24,722 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:168] UPDATE FAIL: Flight number ABC123 does not exist!
+2023-06-24 01:38:24,724 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:70] Flights Added Successfully!
+2023-06-24 01:38:24,725 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:84] Cities Code Retrieved Successfully!
+2023-06-24 01:38:24,726 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:59] Flight Added Successfully!
+2023-06-24 01:41:17,836 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:48] Airports Added Successfully!
+2023-06-24 01:41:17,844 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:136] Airport Updated Successfully!
+2023-06-24 01:41:17,845 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:111] Flights By Date Fetched!
+2023-06-24 01:41:17,847 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:102] All Flights Fetched!
+2023-06-24 01:41:17,849 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:93] All Aiports Fetched!
+2023-06-24 01:41:17,850 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:37] Airport Added Successfully!
+2023-06-24 01:41:17,852 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:168] UPDATE FAIL: Flight number ABC123 does not exist!
+2023-06-24 01:41:17,855 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:70] Flights Added Successfully!
+2023-06-24 01:41:17,856 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:84] Cities Code Retrieved Successfully!
+2023-06-24 01:41:17,857 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:59] Flight Added Successfully!
+2023-06-24 01:41:37,722 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:48] Airports Added Successfully!
+2023-06-24 01:41:37,731 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:136] Airport Updated Successfully!
+2023-06-24 01:41:37,732 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:111] Flights By Date Fetched!
+2023-06-24 01:41:37,734 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:102] All Flights Fetched!
+2023-06-24 01:41:37,736 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:93] All Aiports Fetched!
+2023-06-24 01:41:37,737 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:37] Airport Added Successfully!
+2023-06-24 01:41:37,740 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:164] Flight Updated Successfully!
+2023-06-24 01:41:37,741 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:70] Flights Added Successfully!
+2023-06-24 01:41:37,743 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:84] Cities Code Retrieved Successfully!
+2023-06-24 01:41:37,744 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:59] Flight Added Successfully!
+2023-06-24 01:48:58,354 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:48] Airports Added Successfully!
+2023-06-24 01:48:58,363 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:136] Airport Updated Successfully!
+2023-06-24 01:48:58,364 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:111] Flights By Date Fetched!
+2023-06-24 01:48:58,366 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:183] Airport Deleted Successfully!
+2023-06-24 01:48:58,367 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:102] All Flights Fetched!
+2023-06-24 01:48:58,368 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:93] All Aiports Fetched!
+2023-06-24 01:48:58,369 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:37] Airport Added Successfully!
+2023-06-24 01:48:58,371 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:202] Flight Deleted Successfully!
+2023-06-24 01:48:58,372 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:164] Flight Updated Successfully!
+2023-06-24 01:48:58,373 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:70] Flights Added Successfully!
+2023-06-24 01:48:58,374 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:84] Cities Code Retrieved Successfully!
+2023-06-24 01:48:58,375 WARN [main] c.j.s.s.SearchServiceImplementation [SearchServiceImplementation.java:59] Flight Added Successfully!

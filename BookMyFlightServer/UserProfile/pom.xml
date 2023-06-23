@@ -16,6 +16,8 @@
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2021.0.7</spring-cloud.version>
+		<maven.compiler.source>1.9</maven.compiler.source>
+     	<maven.compiler.target>1.9</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>

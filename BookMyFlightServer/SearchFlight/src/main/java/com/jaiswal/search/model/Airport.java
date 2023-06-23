@@ -15,12 +15,19 @@ public class Airport {
 	
 	@Id
 	private String name;
+	
 	private String city;
+	
 	private String country;
+	
 	private String IATA;
+	
 	private String ICAO;
+	
 	private double lat;
+	
 	private double lon;
+	
 	private String timezone;
 	
 }

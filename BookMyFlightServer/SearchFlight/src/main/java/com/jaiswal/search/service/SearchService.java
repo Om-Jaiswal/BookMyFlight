@@ -1,8 +1,10 @@
 package com.jaiswal.search.service;
 
-
+import java.util.Date;
 import java.util.List;
 
+import com.jaiswal.search.exception.AirportNotFoundException;
+import com.jaiswal.search.exception.FlightNotFoundException;
 import com.jaiswal.search.model.Airport;
 import com.jaiswal.search.model.Flight;
 
@@ -15,4 +17,10 @@ public interface SearchService {
 	public List<String> getCitiesCode();
 	public List<Airport> searchAirports();
 	public List<Flight> searchFlights();
+	public List<Flight> searchFlightByDate(Date date);
+	public String updateAirport(String airportName, Airport airport) throws AirportNotFoundException;
+	public String updateFlight(String flightNumber, Flight flight) throws FlightNotFoundException;
+	public String deleteAirport(String airportName) throws AirportNotFoundException;
+	public String deleteFlight(String flightNumber) throws FlightNotFoundException;
+	
 }
