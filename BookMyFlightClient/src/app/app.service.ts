@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Flight } from './model/flight';
@@ -66,8 +66,18 @@ export class AppService {
     );
   }
 
-  getAllFlights(): Observable<Flight[]> {
-    return this.http.get<Flight[]>('http://localhost:8000/all-flights');
+  getAllFlights(source: string, destination: string, date: string): Observable<Flight[]> {
+
+    const year: string = date.slice(0,4);
+    const month: string = date.slice(5,7);
+    const day: string = date.slice(8,10);
+    
+    const params = new HttpParams()
+    .set('source', source)
+    .set('destination', destination)
+    .set('date', day + "-" + month + "-" + year);
+
+    return this.http.get<Flight[]>('http://localhost:8000/flights', { params });
   }
 
 }

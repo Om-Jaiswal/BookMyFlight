@@ -4,5 +4,6 @@ export interface BookedFlight {
     departureTime: string,
     arrivalTime: string,
     date: string,
+    classAndPrice: any,
     passengerCount: number
 }

@@ -3,5 +3,9 @@ export interface Flight {
     departureTime: string,
     arrivalTime: string,
     airline: string,
-    status: string
+    date: Date,
+    source: string,
+    destination: string,
+    status: string,
+    prices: number[]
 }

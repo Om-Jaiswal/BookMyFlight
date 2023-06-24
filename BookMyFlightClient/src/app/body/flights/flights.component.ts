@@ -13,8 +13,12 @@ import { Booking } from '../../model/booking';
 })
 export class FlightsComponent implements OnInit {
 
-  flight: BookedFlight = {flightNumber: '', airline: '', departureTime: '', arrivalTime: '', date: '', passengerCount: NaN};
+  selectedValue: string = "--- select ---";
+
+  flight: BookedFlight = {flightNumber: '', airline: '', departureTime: '', arrivalTime: '', date: '', classAndPrice: '', passengerCount: NaN};
+  stringSource: string = '';
   source: Airport = { iataCode: '', airportCity: '', airportName: ''};
+  stringDestination: string = '';
   destination: Airport = { iataCode: '', airportCity: '', airportName: ''};
 
   flights: Flight[] = [];
@@ -28,10 +32,12 @@ export class FlightsComponent implements OnInit {
   constructor(private router: Router, private service: AppService) {
     const navigation = this.router.getCurrentNavigation();
     if (navigation && navigation.extras && navigation.extras.state) {
+      this.stringSource = navigation.extras.state['source'];
       this.source.iataCode = navigation.extras.state['source'].slice(0,3);
       this.source.airportCity = navigation.extras.state['source'].substring(6, navigation.extras.state['source'].indexOf('('));
       this.source.airportName = navigation.extras.state['source'].substring(navigation.extras.state['source'].indexOf('(') + 1, navigation.extras.state['source'].indexOf(')'));
 
+      this.stringDestination = navigation.extras.state['destination'];
       this.destination.iataCode = navigation.extras.state['destination'].slice(0,3);
       this.destination.airportCity = navigation.extras.state['destination'].substring(6, navigation.extras.state['destination'].indexOf('('));
       this.destination.airportName = navigation.extras.state['destination'].substring(navigation.extras.state['destination'].indexOf('(') + 1, navigation.extras.state['destination'].indexOf(')'));
@@ -42,7 +48,11 @@ export class FlightsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.service.getAllFlights().subscribe(flights => this.flights = flights);
+    this.service.getAllFlights(this.stringSource, this.stringDestination, this.flight.date).subscribe(flights => this.flights = flights);
+  }
+
+  onSelectChange(event: any) {
+    this.selectedValue = event.target.value;
   }
 
   bookTicket() {
@@ -55,6 +65,7 @@ export class FlightsComponent implements OnInit {
       this.flight.departureTime = departureTime.innerHTML;
       this.flight.arrivalTime = arrivalTime.innerHTML;
       this.flight.flightNumber = flightNumber.innerHTML;
+      this.flight.classAndPrice = this.selectedValue;
       this.router.navigate(['/booking'], { state: this.booking });
     }
   }
