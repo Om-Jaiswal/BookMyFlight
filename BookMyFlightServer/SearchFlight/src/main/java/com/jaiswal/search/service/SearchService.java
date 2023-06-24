@@ -17,7 +17,7 @@ public interface SearchService {
 	public List<String> getCitiesCode();
 	public List<Airport> searchAirports();
 	public List<Flight> searchFlights();
-	public List<Flight> searchFlightByDate(Date date);
+	public List<Flight> searchFlightBySourceDestinationDate(String source, String destination, Date date);
 	public String updateAirport(String airportName, Airport airport) throws AirportNotFoundException;
 	public String updateFlight(String flightNumber, Flight flight) throws FlightNotFoundException;
 	public String deleteAirport(String airportName) throws AirportNotFoundException;

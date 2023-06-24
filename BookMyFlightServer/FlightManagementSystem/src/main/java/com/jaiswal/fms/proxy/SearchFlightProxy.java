@@ -42,7 +42,7 @@ public interface SearchFlightProxy {
 	public List<Flight> searchFlights();
 	
 	@GetMapping("/search-flights/flights")
-	public List<Flight> searchFlightByDate(@RequestParam("date") @DateTimeFormat(pattern = "dd-MM-yyyy") Date date);
+	public List<Flight> searchFlightBySourceDestinationDate(@RequestParam("source") String source, @RequestParam("destination") String destination, @RequestParam("date") @DateTimeFormat(pattern = "dd-MM-yyyy") Date date);
 	
 	@PutMapping("/search-flights/update-airport")
 	public String updateAirport(@RequestParam("airportName") String airportName, @RequestBody Airport airport) throws AirportNotFoundException;

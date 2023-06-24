@@ -104,12 +104,12 @@ public class SearchServiceImplementation implements SearchService {
 	}
 
 	/**
-	 * Method to get the list of all flights by date in the database
-	 * @return flights - list of all flights available in the database filter by date
+	 * Method to get the list of all flights by source, destination and date in the database
+	 * @return flights - list of all flights available in the database filter by source, destination and date
 	 */
-	public List<Flight> searchFlightByDate(Date date) {
+	public List<Flight> searchFlightBySourceDestinationDate(String source, String destination, Date date) {
 		logger.warn("Flights By Date Fetched!");
-		return flightRepository.findByDate(date);
+		return flightRepository.findBySourceAndDestinationAndDate(source, destination, date);
 	}
 
 	/**
@@ -156,8 +156,10 @@ public class SearchServiceImplementation implements SearchService {
 			updatedFlight.setArrivalTime(flight.getArrivalTime());
 			updatedFlight.setAirline(flight.getAirline());
 			updatedFlight.setDate(flight.getDate());
+			updatedFlight.setSource(flight.getSource());
+			updatedFlight.setDestination(flight.getDestination());
 			updatedFlight.setStatus(flight.getStatus());
-			updatedFlight.setPrice(flight.getPrice());
+			updatedFlight.setPrices(flight.getPrices());
 
 			flightRepository.save(updatedFlight);
 

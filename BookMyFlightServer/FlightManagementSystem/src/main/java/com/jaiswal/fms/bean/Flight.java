@@ -24,8 +24,12 @@ private String flightNumber;
 	@JsonFormat(pattern = "dd-MM-yyyy")
 	private Date date;
 	
+	private String source;
+	
+	private String destination;
+	
 	private String status;
 	
-	private double price;
+	private double[] price;
 	
 }

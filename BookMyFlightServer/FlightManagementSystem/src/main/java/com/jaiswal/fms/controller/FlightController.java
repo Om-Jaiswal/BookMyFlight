@@ -63,8 +63,8 @@ public class FlightController {
 	}
 	
 	@GetMapping("/flights")
-	public List<Flight> searchFlightByDate(@RequestParam("date") @DateTimeFormat(pattern = "dd-MM-yyyy") Date date) {
-		return search.searchFlightByDate(date);
+	public List<Flight> searchFlightBySourceDestinationDate(@RequestParam("source") String source, @RequestParam("destination") String destination, @RequestParam("date") @DateTimeFormat(pattern = "dd-MM-yyyy") Date date) {
+		return search.searchFlightBySourceDestinationDate(source, destination, date);
 	}
 	
 	@PutMapping("/update-airport")

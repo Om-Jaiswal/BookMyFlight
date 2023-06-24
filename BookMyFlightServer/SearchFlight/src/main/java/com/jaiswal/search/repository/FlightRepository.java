@@ -10,5 +10,5 @@ import com.jaiswal.search.model.Flight;
 
 @Repository
 public interface FlightRepository extends MongoRepository<Flight, String> {
-	List<Flight> findByDate(Date date);
+	List<Flight> findBySourceAndDestinationAndDate(String source, String destination, Date date);
 }

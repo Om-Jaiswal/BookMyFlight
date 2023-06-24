@@ -33,6 +33,7 @@ class SearchServiceImplementationTest {
 	private List<Airport> airports;
 	
 	private Date date;
+	private double[] prices;
 	Optional<Flight> optionalFlight;
 	
 	private Flight flight;
@@ -59,11 +60,15 @@ class SearchServiceImplementationTest {
 		airports.add(airport);
 		
 		date = new Date();
+		prices = new double[3];
+		prices[0] = 1499.00;
+		prices[1] = 1999.00;
+		prices[2] = 2499.00;
 		optionalFlight = Optional.ofNullable(flight);
 		
-		flight = new Flight("ABC123", "5:00 AM", "8:00 AM",  "Delta", date, "On-time", 1499.00);
+		flight = new Flight("ABC123", "5:00 AM", "8:00 AM", "Delta", date, "NAG - Nagpur (Dr. Babasaheb Ambedkar Intl)", "BOM - Mumbai (Chhatrapati Shivaji Intl)", "On-time", prices);
 		optionalFlight = Optional.ofNullable(flight);
-		updatedFlight = new Flight("ABC123", "6:00 AM", "9:00 AM",  "Delta", date, "On-time", 1499.00);
+		updatedFlight = new Flight("ABC123", "6:00 AM", "9:00 AM", "Delta", date, "NAG - Nagpur (Dr. Babasaheb Ambedkar Intl)", "BOM - Mumbai (Chhatrapati Shivaji Intl)", "On-time", prices);
 		flights = new ArrayList<Flight>();
 		flights.add(flight);
 		
@@ -114,9 +119,9 @@ class SearchServiceImplementationTest {
 	}
 	
 	@Test
-	void searchFlightByDateTest() {
-		when(flightRepository.findByDate(date)).thenReturn(flights);
-		assertEquals(flights, service.searchFlightByDate(date));
+	void searchFlightBySourceDestinationDateTest() {
+		when(flightRepository.findBySourceAndDestinationAndDate("NAG - Nagpur (Dr. Babasaheb Ambedkar Intl)", "BOM - Mumbai (Chhatrapati Shivaji Intl)", date)).thenReturn(flights);
+		assertEquals(flights, service.searchFlightBySourceDestinationDate("NAG - Nagpur (Dr. Babasaheb Ambedkar Intl)", "BOM - Mumbai (Chhatrapati Shivaji Intl)", date));
 	}
 	
 	@Test

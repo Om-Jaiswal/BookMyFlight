@@ -29,8 +29,12 @@ public class Flight {
 	@JsonFormat(pattern = "dd-MM-yyyy")
 	private Date date;
 	
+	private String source;
+	
+	private String destination;
+	
 	private String status;
 	
-	private double price;
+	private double[] prices;
 	
 }
