@@ -13,3 +13,35 @@
     margin: 30px;
     padding: 30px;
 }
+
+.container .row .col-sm .card .card-body .box {
+    text-align: center;
+}
+
+.container .row .col-sm .card .card-body .box label {
+    top: 0;
+}
+
+.container .row .col-sm .card .card-body .box input[type="checkbox"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid #000;
+    border-radius: 25%;
+    height: 50px;
+    margin: 2px;
+    width: 50px;
+}
+
+.container .row .col-sm .card .card-body .box input[type="checkbox"]:checked {
+    background-color: rgb(227, 249, 195);
+}
+
+.container .row .col-sm .card .card-body .box input[type="checkbox"]:disabled {
+    background-color: rgba(226, 229, 223, 0.77);
+}
+
+.container .row .col-sm .card .card-body .center-align {
+    text-align: center;
+    margin-top: 25px;
+}

@@ -67,15 +67,10 @@ export class AppService {
   }
 
   getAllFlights(source: string, destination: string, date: string): Observable<Flight[]> {
-
-    const year: string = date.slice(0,4);
-    const month: string = date.slice(5,7);
-    const day: string = date.slice(8,10);
-    
     const params = new HttpParams()
     .set('source', source)
     .set('destination', destination)
-    .set('date', day + "-" + month + "-" + year);
+    .set('date', date);
 
     return this.http.get<Flight[]>('http://localhost:8000/flights', { params });
   }

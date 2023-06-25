@@ -2,11 +2,14 @@
     <div class="center-align">
         <h3>BookMyFlight</h3>
     </div>
-    <form (ngSubmit) = "onSubmit()">
+    <div *ngIf="fromList" class="alert alert-danger" role="alert">
+        Please select source/destination from available options.
+    </div>
+    <form #searchForm="ngForm" (ngSubmit) = "onSubmit(searchForm)">
         <div class="row">
             <div class="form-group">
                 <label for="source">Source</label>
-                <input type="text" name="source" [(ngModel)]="data.source" list="cities" class="form-control" placeholder="Enter the Source" required>
+                <input type="text" id="source" name="source" ngModel list="cities" class="form-control" placeholder="Enter the Source" required />
                 <datalist id="cities">
                     <option *ngFor="let city of cities" value="{{city}}">
                 </datalist>
@@ -18,20 +21,20 @@
 
             <div class="form-group">
                 <label for="destination">Destination</label>
-                <input type="text" name="destination" [(ngModel)]="data.destination" list="cities" class="form-control" placeholder="Enter the Destination" required>
+                <input type="text" id="destination" name="destination" ngModel list="cities" class="form-control" placeholder="Enter the Destination" required />
                 <datalist id="cities">
                     <option *ngFor="let city of cities" value="{{city}}">
                 </datalist>
 
                 <label for="date">Date</label>
-                <input type="date" name="date" [(ngModel)]="data.date" class="form-control" required>
+                <input type="date" id="date" name="date" ngModel class="form-control" required />
 
-                <label for="passenger">Passenger Count</label>
-                <input type="number" name="passenger" [(ngModel)]="data.passenger" class="form-control" placeholder="Enter the Passenger Count" required>
+                <label for="passengerCount">Passenger Count</label>
+                <input type="number" id="passengerCount" name="passengerCount" ngModel class="form-control" min="1" placeholder="Enter the Passenger Count" required />
             </div>
 
             <div class="center-align">
-                <button type="submit" class="btn btn-dark"><i class="bi bi-search"></i> Search Flights</button>
+                <button type="submit" [disabled]="searchForm.invalid" class="btn btn-dark"><i class="bi bi-search"></i> Search Flights</button>
             </div>
         </div>
     </form>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
@@ -9,8 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
   cities: string[] = [];
-
-  data: { source: string, destination: string, date: string, passenger: number } = { source: '', destination: '', date: '', passenger: NaN};
+  fromList: boolean = false;
 
   constructor(private router: Router, private http: HttpClient) {}
 
@@ -19,13 +19,26 @@ export class HomeComponent implements OnInit {
   }
 
   exchangeValues() {
-    const temp = this.data.source;
-    this.data.source = this.data.destination;
-    this.data.destination = temp;
+    const source = document.getElementById('source') as HTMLInputElement;
+    const destination = document.getElementById('destination') as HTMLInputElement;
+
+    const temp = source.value;
+    source.value = destination.value;
+    destination.value = temp;
   }
 
-  onSubmit() {
-    this.router.navigate(['/flights'], { state: this.data });
+  onSubmit(form: NgForm) {
+    if (form.valid) {
+      if (this.cities.includes(form.value.source) && this.cities.includes(form.value.destination)) {
+        const source = form.value.source;
+        const destination = form.value.destination;
+        const date = form.value.date;
+        const passengerCount = form.value.passengerCount;
+        this.router.navigate(['/flights'], { state: { source: source, destination: destination, date: date, passengerCount: passengerCount} });
+      } else {
+        this.fromList = true;
+      }
+    }
   }
 
   getAllCodes() {

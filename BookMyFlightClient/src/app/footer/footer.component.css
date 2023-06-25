@@ -6,6 +6,7 @@
 
 .container footer {
     background-color: #ffffff !important;
+    border: 2px solid rgb(10, 140, 220);
     border-radius: 25px;
     position: fixed;
     bottom: 0;

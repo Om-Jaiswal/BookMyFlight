@@ -13,7 +13,8 @@ import { Booking } from '../../model/booking';
 })
 export class FlightsComponent implements OnInit {
 
-  selectedValue: string = "--- select ---";
+  selectedValue: string = '--- Select Class & Price ---';
+  isDisabled: boolean = true;
 
   flight: BookedFlight = {flightNumber: '', airline: '', departureTime: '', arrivalTime: '', date: '', classAndPrice: '', passengerCount: NaN};
   stringSource: string = '';
@@ -42,8 +43,8 @@ export class FlightsComponent implements OnInit {
       this.destination.airportCity = navigation.extras.state['destination'].substring(6, navigation.extras.state['destination'].indexOf('('));
       this.destination.airportName = navigation.extras.state['destination'].substring(navigation.extras.state['destination'].indexOf('(') + 1, navigation.extras.state['destination'].indexOf(')'));
 
-      this.flight.date = navigation.extras.state['date'];
-      this.flight.passengerCount = navigation.extras.state['passenger'];
+      this.flight.date = navigation.extras.state['date'].slice(8,10) + '-' + navigation.extras.state['date'].slice(5,7) + '-' + navigation.extras.state['date'].slice(0,4);
+      this.flight.passengerCount = navigation.extras.state['passengerCount'];
     }
   }
 
@@ -52,6 +53,7 @@ export class FlightsComponent implements OnInit {
   }
 
   onSelectChange(event: any) {
+    this.isDisabled = !this.isDisabled;
     this.selectedValue = event.target.value;
   }
 
