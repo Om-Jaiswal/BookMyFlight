@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="center-align">
+        <h3>Profile</h3>
+    </div>
+    <div *ngIf="profileForm.controls['name'].errors?.['pattern']" class="alert alert-danger" role="alert">Name should a combination of first and last name!</div>
+    <div *ngIf="profileForm.controls['mobile'].errors?.['pattern']" class="alert alert-danger" role="alert">Invalid mobile number!</div>
+    <div *ngIf="profileForm.controls['email'].errors?.['pattern']" class="alert alert-danger" role="alert">Invalid email format!</div>
+    <div *ngIf="updated" class="alert alert-success" role="alert">Details Updated!</div>
+    <form [formGroup]="profileForm" (ngSubmit)="updateProfile()">
+        <div class="row">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" formControlName="name" placeholder="Enter the Name" />
+            </div>
+
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" formControlName="email" placeholder="Enter the Email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="phone" id="mobile" class="form-control" formControlName="mobile" placeholder="Enter the Mobile Number" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" class="form-control" formControlName="address" placeholder="Enter the Address" rows="3"></textarea>
+            </div>
+
+            <div class="center-align">
+                <button type="submit" class="btn btn-dark" [disabled]="isFormDisabled()">Update</button>
+            </div>
+        </div>
+    </form>
+</div>

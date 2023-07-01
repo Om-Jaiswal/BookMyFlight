@@ -1,0 +1,106 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card round-border">
+          <div class="card-body black-border">
+            <h5 class="card-title">Travel Details</h5>
+            <div class="row">
+              <div class="col-sm">
+                <p class="card-text mt-3"><strong>Source:</strong></p>
+                <p class="travel-data"><strong>IATA Code: </strong>{{ booking.source.iataCode }}</p>
+                <p class="travel-data"><strong>City: </strong>{{ booking.source.airportCity }}</p>
+                <p class="travel-data"><strong>Airport: </strong>{{ booking.source.airportName }}</p>
+              </div>
+              <div class="col-sm">
+                <p class="card-text mt-3"><strong>Destination:</strong></p>
+                <p class="travel-data"><strong>IATA Code: </strong>{{ booking.destination.iataCode }}</p>
+                <p class="travel-data"><strong>City: </strong>{{ booking.destination.airportCity }}</p>
+                <p class="travel-data"><strong>Airport: </strong>{{ booking.destination.airportName }}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <p class="card-text mt-3"><strong>Date: </strong>{{ booking.flight.date }}</p>
+              </div>
+              <div class="col-sm">
+                <p class="card-text mt-3"><strong>Passenger Count: </strong>{{ booking.flight.passengerCount }}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <p class="card-text mt-3"><strong>Flight Number: </strong>{{ booking.flight.flightNumber }}</p>
+              </div>
+              <div class="col-sm">
+                <p class="card-text mt-3"><strong>Airline: </strong>{{ booking.flight.airline }}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <p class="card-text mt-3"><strong>Departure Time: </strong>{{ booking.flight.departureTime }}</p>
+              </div>
+              <div class="col-sm">
+                <p class="card-text mt-3"><strong>Arrival Time: </strong>{{ booking.flight.arrivalTime }}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <p class="card-text mt-3"><strong>Flight Class: </strong>{{ flightClass }}</p>
+              </div>
+              <div class="col-sm">
+                <p class="card-text mt-3"><strong>Price: </strong>Rs. {{ price }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card round-border">
+          <div class="card-body black-border">
+              <h5 class="card-title">Payment Details</h5>
+              <p class="card-text mt-3"><strong>Selected Seats: </strong>{{ confirmSeats.join(', ') }}</p>
+              <div class="row">
+                <div class="col-sm">
+                  <p class="card-text"><strong>Amount: </strong>{{ price }} x {{ confirmSeats.length }} = Rs. {{ price * confirmSeats.length }}</p>
+                </div>
+                <div class="col-sm">
+                  <p class="card-text"><strong>GST (5%): </strong>Rs. {{ price * confirmSeats.length * 0.05 }}</p>
+                </div>
+              </div>
+              <p class="card-text mt-3"><strong>Total Amount: </strong>Rs. {{ (price * confirmSeats.length) + (price * confirmSeats.length * 0.05) }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-success" role="alert">
+            Note: Please enter all {{ booking.flight.passengerCount }} passenger details.
+        </div>
+        <div class="card round-border">
+            <div class="card-body black-border">
+              <h5 class="card-title">Passengers Details</h5>
+              <div *ngFor="let passenger of passengers; let i = index">
+                <p>Passenger-{{ i + 1 }}</p>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="name">Name </label>
+                    <input type="text" class="form-control" id="name" [(ngModel)]="passenger.name" name="name" required>
+                  </div>
+                  <div class="col-sm-3">
+                    <label for="age">Age </label>
+                    <input type="number" class="form-control" id="age" [(ngModel)]="passenger.age" name="age" min="1" required>
+                  </div>
+                  <div class="col-sm-3">
+                    <label for="gender">Gender </label>
+                    <select class="form-select" id="gender" [(ngModel)]="passenger.gender" name="gender" required>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="center-align">
+                <button type="button" class="btn btn-dark" [disabled]="!isFormValid()" (click)="initiatePayment()">Pay Now</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+

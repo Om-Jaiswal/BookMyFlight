@@ -1,0 +1,25 @@
+.container .row .col-sm .card {
+    background-color: #ffffff !important;
+    margin: 10px auto;
+}
+
+.container .row .col-sm .round-border {
+    border-radius: 25px;
+}
+
+.container .row .col-sm .card .black-border {
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.container .row .col-sm .card .card-body .travel-data {
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+.container .row .col-sm .card .card-body .center-align {
+    text-align: center;
+    margin-top: 25px;
+}

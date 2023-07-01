@@ -5,8 +5,11 @@ import { OffersComponent } from './body/offers/offers.component';
 import { ContactComponent } from './body/contact/contact.component';
 import { SigninComponent } from './body/signin/signin.component';
 import { SignupComponent } from './body/signup/signup.component';
+import { ProfileComponent } from './body/profile/profile.component';
 import { FlightsComponent } from './body/flights/flights.component';
 import { BookingComponent } from './body/booking/booking.component';
+import { PaymentComponent } from './body/payment/payment.component';
+import { BookedComponent } from './body/booked/booked.component';
 import { AppGuard } from './app.guard';
 
 const routes: Routes = [
@@ -17,7 +20,10 @@ const routes: Routes = [
   { path: 'flights', component: FlightsComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'booking', component: BookingComponent, canActivate: [AppGuard] }
+  { path: 'profile', component: ProfileComponent, canActivate: [AppGuard] },
+  { path: 'booking', component: BookingComponent, canActivate: [AppGuard] },
+  { path: 'payment', component: PaymentComponent, canActivate: [AppGuard] },
+  { path: 'booked', component: BookedComponent, canActivate: [AppGuard] }
 ];
 
 @NgModule({

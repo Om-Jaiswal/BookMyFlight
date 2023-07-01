@@ -36,154 +36,154 @@
         </div>
         <div class="card round-border">
             <div class="card-body black-border">
-              <h5>{{ booking.flight.classAndPrice.slice(0, booking.flight.classAndPrice.indexOf('-')) }}</h5>
+              <h5>{{ flightClass }} Class</h5>
               <div class="row">
                 <div class="col-sm">
                   <label><strong>A</strong></label>
                   <div class="box">
                     <label>1</label>
-                    <input type="checkbox" value="A1" [checked]="selectedSeats.includes('A1')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('A1')" (change)="onSeatChange('A1')">
+                    <input type="checkbox" value="A1" [checked]="selectedSeats.includes('A1')" [disabled]="bookedSeats.includes('A1') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('A1'))" (change)="onSeatChange('A1')">
                   </div>
                   <div class="box">
                     <label>2</label>
-                    <input type="checkbox" value="A2" [checked]="selectedSeats.includes('A2')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('A2')" (change)="onSeatChange('A2')">
+                    <input type="checkbox" value="A2" [checked]="selectedSeats.includes('A2')" [disabled]="bookedSeats.includes('A2') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('A2'))" (change)="onSeatChange('A2')">
                   </div>
                   <div class="box">
                     <label>3</label>
-                    <input type="checkbox" value="A3" [checked]="selectedSeats.includes('A3')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('A3')" (change)="onSeatChange('A3')">
+                    <input type="checkbox" value="A3" [checked]="selectedSeats.includes('A3')" [disabled]="bookedSeats.includes('A3') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('A3'))" (change)="onSeatChange('A3')">
                   </div>
                   <div class="box">
                     <label>4</label>
-                    <input type="checkbox" value="A4" [checked]="selectedSeats.includes('A4')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('A4')" (change)="onSeatChange('A4')">
+                    <input type="checkbox" value="A4" [checked]="selectedSeats.includes('A4')" [disabled]="bookedSeats.includes('A4') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('A4'))" (change)="onSeatChange('A4')">
                   </div>
                   <div class="box">
                     <label>5</label>
-                    <input type="checkbox" value="A5" [checked]="selectedSeats.includes('A5')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('A5')" (change)="onSeatChange('A5')">
+                    <input type="checkbox" value="A5" [checked]="selectedSeats.includes('A5')" [disabled]="bookedSeats.includes('A5') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('A5'))" (change)="onSeatChange('A5')">
                   </div>
                   <div class="box">
                     <label>6</label>
-                    <input type="checkbox" value="A6" [checked]="selectedSeats.includes('A6')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('A6')" (change)="onSeatChange('A6')">
+                    <input type="checkbox" value="A6" [checked]="selectedSeats.includes('A6')" [disabled]="bookedSeats.includes('A6') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('A6'))" (change)="onSeatChange('A6')">
                   </div>
                   <div class="box">
                     <label>7</label>
-                    <input type="checkbox" value="A7" [checked]="selectedSeats.includes('A7')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('A7')" (change)="onSeatChange('A7')">
+                    <input type="checkbox" value="A7" [checked]="selectedSeats.includes('A7')" [disabled]="bookedSeats.includes('A7') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('A7'))" (change)="onSeatChange('A7')">
                   </div>
                   <div class="box">
                     <label>8</label>
-                    <input type="checkbox" value="A8" [checked]="selectedSeats.includes('A8')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('A8')" (change)="onSeatChange('A8')">
+                    <input type="checkbox" value="A8" [checked]="selectedSeats.includes('A8')" [disabled]="bookedSeats.includes('A8') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('A8'))" (change)="onSeatChange('A8')">
                   </div> 
                 </div>
                 <div class="col-sm">
                   <label><strong>B</strong></label>
                   <div class="box">
                     <label>1</label>
-                    <input type="checkbox" value="B1" [checked]="selectedSeats.includes('B1')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('B1')" (change)="onSeatChange('B1')">
+                    <input type="checkbox" value="B1" [checked]="selectedSeats.includes('B1')" [disabled]="bookedSeats.includes('B1') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('B1'))" (change)="onSeatChange('B1')">
                   </div>
                   <div class="box">
                     <label>2</label>
-                    <input type="checkbox" value="B2" [checked]="selectedSeats.includes('B2')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('B2')" (change)="onSeatChange('B2')">
+                    <input type="checkbox" value="B2" [checked]="selectedSeats.includes('B2')" [disabled]="bookedSeats.includes('B2') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('B2'))" (change)="onSeatChange('B2')">
                   </div>
                   <div class="box">
                     <label>3</label>
-                    <input type="checkbox" value="B3" [checked]="selectedSeats.includes('B3')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('B3')" (change)="onSeatChange('B3')">
+                    <input type="checkbox" value="B3" [checked]="selectedSeats.includes('B3')" [disabled]="bookedSeats.includes('B3') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('B3'))" (change)="onSeatChange('B3')">
                   </div>
                   <div class="box">
                     <label>4</label>
-                    <input type="checkbox" value="B4" [checked]="selectedSeats.includes('B4')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('B4')" (change)="onSeatChange('B4')">
+                    <input type="checkbox" value="B4" [checked]="selectedSeats.includes('B4')" [disabled]="bookedSeats.includes('B4') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('B4'))" (change)="onSeatChange('B4')">
                   </div>
                   <div class="box">
                     <label>5</label>
-                    <input type="checkbox" value="B5" [checked]="selectedSeats.includes('B5')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('B5')" (change)="onSeatChange('B5')">
+                    <input type="checkbox" value="B5" [checked]="selectedSeats.includes('B5')" [disabled]="bookedSeats.includes('B5') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('B5'))" (change)="onSeatChange('B5')">
                   </div>
                   <div class="box">
                     <label>6</label>
-                    <input type="checkbox" value="B6" [checked]="selectedSeats.includes('B6')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('B6')" (change)="onSeatChange('B6')"> 
+                    <input type="checkbox" value="B6" [checked]="selectedSeats.includes('B6')" [disabled]="bookedSeats.includes('B6') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('B6'))" (change)="onSeatChange('B6')"> 
                   </div>
                   <div class="box">
                     <label>7</label>
-                    <input type="checkbox" value="B7" [checked]="selectedSeats.includes('B7')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('B7')" (change)="onSeatChange('B7')">
+                    <input type="checkbox" value="B7" [checked]="selectedSeats.includes('B7')" [disabled]="bookedSeats.includes('B7') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('B7'))" (change)="onSeatChange('B7')">
                   </div>
                   <div class="box">
                     <label>8</label>
-                    <input type="checkbox" value="B8" [checked]="selectedSeats.includes('B8')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('B8')" (change)="onSeatChange('B8')"> 
+                    <input type="checkbox" value="B8" [checked]="selectedSeats.includes('B8')" [disabled]="bookedSeats.includes('B8') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('B8'))" (change)="onSeatChange('B8')"> 
                   </div>
                 </div>
                 <div class="col-sm">
                   <label><strong>C</strong></label>
                   <div class="box">
                     <label>1</label>
-                    <input type="checkbox" value="C1" [checked]="selectedSeats.includes('C1')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('C1')" (change)="onSeatChange('C1')">
+                    <input type="checkbox" value="C1" [checked]="selectedSeats.includes('C1')" [disabled]="bookedSeats.includes('C1') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('C1'))" (change)="onSeatChange('C1')">
                   </div>
                   <div class="box">
                     <label>2</label>
-                    <input type="checkbox" value="C2" [checked]="selectedSeats.includes('C2')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('C2')" (change)="onSeatChange('C2')">
+                    <input type="checkbox" value="C2" [checked]="selectedSeats.includes('C2')" [disabled]="bookedSeats.includes('C2') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('C2'))" (change)="onSeatChange('C2')">
                   </div>
                   <div class="box">
                     <label>3</label>
-                    <input type="checkbox" value="C3" [checked]="selectedSeats.includes('C3')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('C3')" (change)="onSeatChange('C3')">
+                    <input type="checkbox" value="C3" [checked]="selectedSeats.includes('C3')" [disabled]="bookedSeats.includes('C3') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('C3'))" (change)="onSeatChange('C3')">
                   </div>
                   <div class="box">
                     <label>4</label>
-                    <input type="checkbox" value="C4" [checked]="selectedSeats.includes('C4')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('C4')" (change)="onSeatChange('C4')">
+                    <input type="checkbox" value="C4" [checked]="selectedSeats.includes('C4')" [disabled]="bookedSeats.includes('C4') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('C4'))" (change)="onSeatChange('C4')">
                   </div>
                   <div class="box">
                     <label>5</label>
-                    <input type="checkbox" value="C5" [checked]="selectedSeats.includes('C5')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('C5')" (change)="onSeatChange('C5')">
+                    <input type="checkbox" value="C5" [checked]="selectedSeats.includes('C5')" [disabled]="bookedSeats.includes('C5') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('C5'))" (change)="onSeatChange('C5')">
                   </div>
                   <div class="box">
                     <label>6</label>
-                    <input type="checkbox" value="C6" [checked]="selectedSeats.includes('C6')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('C6')" (change)="onSeatChange('C6')">
+                    <input type="checkbox" value="C6" [checked]="selectedSeats.includes('C6')" [disabled]="bookedSeats.includes('C6') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('C6'))" (change)="onSeatChange('C6')">
                   </div>
                   <div class="box">
                     <label>7</label>
-                    <input type="checkbox" value="C7" [checked]="selectedSeats.includes('C7')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('C7')" (change)="onSeatChange('C7')">
+                    <input type="checkbox" value="C7" [checked]="selectedSeats.includes('C7')" [disabled]="bookedSeats.includes('C7') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('C7'))" (change)="onSeatChange('C7')">
                   </div>
                   <div class="box">
                     <label>8</label>
-                    <input type="checkbox" value="C8" [checked]="selectedSeats.includes('C8')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('C8')" (change)="onSeatChange('C8')">  
+                    <input type="checkbox" value="C8" [checked]="selectedSeats.includes('C8')" [disabled]="bookedSeats.includes('C8') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('C8'))" (change)="onSeatChange('C8')">  
                   </div>
                 </div>
                 <div class="col-sm">
                   <label><strong>D</strong></label>
                   <div class="box">
                     <label>1</label>
-                    <input type="checkbox" value="D1" [checked]="selectedSeats.includes('D1')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('D1')" (change)="onSeatChange('D1')">
+                    <input type="checkbox" value="D1" [checked]="selectedSeats.includes('D1')" [disabled]="bookedSeats.includes('D1') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('D1'))" (change)="onSeatChange('D1')">
                   </div>
                   <div class="box">
                     <label>2</label>
-                    <input type="checkbox" value="D2" [checked]="selectedSeats.includes('D2')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('D2')" (change)="onSeatChange('D2')">
+                    <input type="checkbox" value="D2" [checked]="selectedSeats.includes('D2')" [disabled]="bookedSeats.includes('D2') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('D2'))" (change)="onSeatChange('D2')">
                   </div>
                   <div class="box">
                     <label>3</label>
-                    <input type="checkbox" value="D3" [checked]="selectedSeats.includes('D3')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('D3')" (change)="onSeatChange('D3')">
+                    <input type="checkbox" value="D3" [checked]="selectedSeats.includes('D3')" [disabled]="bookedSeats.includes('D3') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('D3'))" (change)="onSeatChange('D3')">
                   </div>
                   <div class="box">
                     <label>4</label>
-                    <input type="checkbox" value="D4" [checked]="selectedSeats.includes('D4')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('D4')" (change)="onSeatChange('D4')">
+                    <input type="checkbox" value="D4" [checked]="selectedSeats.includes('D4')" [disabled]="bookedSeats.includes('D4') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('D4'))" (change)="onSeatChange('D4')">
                   </div>
                   <div class="box">
                     <label>5</label>
-                    <input type="checkbox" value="D5" [checked]="selectedSeats.includes('D5')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('D5')" (change)="onSeatChange('D5')">
+                    <input type="checkbox" value="D5" [checked]="selectedSeats.includes('D5')" [disabled]="bookedSeats.includes('D5') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('D5'))" (change)="onSeatChange('D5')">
                   </div>
                   <div class="box">
                     <label>6</label>
-                    <input type="checkbox" value="D6" [checked]="selectedSeats.includes('D6')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('D6')" (change)="onSeatChange('D6')"> 
+                    <input type="checkbox" value="D6" [checked]="selectedSeats.includes('D6')" [disabled]="bookedSeats.includes('D6') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('D6'))" (change)="onSeatChange('D6')"> 
                   </div>
                   <div class="box">
                     <label>7</label>
-                    <input type="checkbox" value="D7" [checked]="selectedSeats.includes('D7')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('D7')" (change)="onSeatChange('D7')">
+                    <input type="checkbox" value="D7" [checked]="selectedSeats.includes('D7')" [disabled]="bookedSeats.includes('D7') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('D7'))" (change)="onSeatChange('D7')">
                   </div>
                   <div class="box">
                     <label>8</label>
-                    <input type="checkbox" value="D8" [checked]="selectedSeats.includes('D8')" [disabled]="selectedSeats.length >= maxSeats && !selectedSeats.includes('D8')" (change)="onSeatChange('D8')"> 
+                    <input type="checkbox" value="D8" [checked]="selectedSeats.includes('D8')" [disabled]="bookedSeats.includes('D8') || (selectedSeats.length >= maxSeats && !selectedSeats.includes('D8'))" (change)="onSeatChange('D8')"> 
                   </div>
                 </div>
               </div>  
               <div class="center-align">
-                <button type="button" class="btn btn-dark">Confirm</button>
+                <button type="button" class="btn btn-dark" (click)="confirmSeats()">Confirm</button>
               </div>           
             </div>
         </div>
       </div>
     </div>
-  </div>
+</div>

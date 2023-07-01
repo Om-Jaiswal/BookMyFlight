@@ -13,7 +13,6 @@ import { Booking } from '../../model/booking';
 })
 export class FlightsComponent implements OnInit {
 
-  selectedValue: string = '--- Select Class & Price ---';
   isDisabled: boolean = true;
 
   flight: BookedFlight = {flightNumber: '', airline: '', departureTime: '', arrivalTime: '', date: '', classAndPrice: '', passengerCount: NaN};
@@ -52,9 +51,8 @@ export class FlightsComponent implements OnInit {
     this.service.getAllFlights(this.stringSource, this.stringDestination, this.flight.date).subscribe(flights => this.flights = flights);
   }
 
-  onSelectChange(event: any) {
-    this.isDisabled = !this.isDisabled;
-    this.selectedValue = event.target.value;
+  onSelectChange() {
+    this.isDisabled = false;
   }
 
   bookTicket() {
@@ -62,12 +60,17 @@ export class FlightsComponent implements OnInit {
     const departureTime = document.getElementById('departureTime');
     const arrivalTime = document.getElementById('arrivalTime');
     const flightNumber = document.getElementById('flightNumber');
+    const classAndPrice = document.getElementsByName('classAndPrice') as NodeListOf<HTMLInputElement>;;
     if (airline && departureTime && arrivalTime && flightNumber) {
       this.flight.airline = airline.innerHTML;
       this.flight.departureTime = departureTime.innerHTML;
       this.flight.arrivalTime = arrivalTime.innerHTML;
       this.flight.flightNumber = flightNumber.innerHTML;
-      this.flight.classAndPrice = this.selectedValue;
+      classAndPrice.forEach((option: HTMLInputElement) => {
+        if (option.checked) {
+          this.flight.classAndPrice = option.value;
+        }
+      });
       this.router.navigate(['/booking'], { state: this.booking });
     }
   }

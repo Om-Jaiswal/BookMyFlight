@@ -2,13 +2,17 @@
     background-color: #ffffff !important;
     border-radius: 10px;
     float: right;
-    margin: 50px;
+    margin: 30px;
     padding: 50px;
     width: fit-content;
 }
 
 .container .form-group label {
     margin-top: 30px;
+}
+
+.container .form-group .mandatory {
+    color: red;
 }
 
 .container .form-group .vaild-message {

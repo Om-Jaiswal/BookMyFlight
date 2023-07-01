@@ -1,32 +1,61 @@
 <div class="container">
-    <div *ngIf="same" class="alert alert-danger" role="alert">
-        Both password should be same!
-    </div>
-    <form #signupForm="ngForm" (ngSubmit)="signup(signupForm)">
+    <div *ngIf="signupForm.controls['name'].errors?.['pattern']" class="alert alert-danger" role="alert">Name should a combination of first and last name!</div>
+    <div *ngIf="signupForm.controls['username'].errors?.['pattern']" class="alert alert-danger" role="alert">Username should be minimum 6 characters without any special characters!</div>
+    <div *ngIf="signupForm.controls['mobile'].errors?.['pattern']" class="alert alert-danger" role="alert">Invalid mobile number!</div>
+    <div *ngIf="signupForm.controls['email'].errors?.['pattern']" class="alert alert-danger" role="alert">Invalid email format!</div>
+    <div *ngIf="same" class="alert alert-danger" role="alert">Both password should be same!</div>
+    <form [formGroup]="signupForm" (ngSubmit)="signup()">
         <h3>Sign Up</h3>
-        <div class="row">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" ngModel class="form-control" placeholder="Enter the Username" required />
+        <div class="row" style="max-width: 750px;">
+            <div class="row">
+                <div class="col-sm form-group">
+                    <label for="name">Name <span class="mandatory">*</span></label>
+                    <p class="vaild-message">(Eg. John Doe)</p>
+                    <input type="text" id="name" class="form-control" formControlName="name" placeholder="Enter the Name" />
+                </div>
+
+                <div class="col-sm form-group">
+                    <label for="username">Username <span class="mandatory">*</span></label>
+                    <p class="vaild-message">(Minimum 6 characters excluding special characters)</p>
+                    <input type="text" id="username" class="form-control" formControlName="username" placeholder="Enter the Username" />
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="password">Password</label>
-                <p class="vaild-message">(Minimum 6 Characters)</p>
-                <input type="password" id="password" name="password" ngModel class="form-control" placeholder="Enter the Password" minlength="6" required />
+            <div class="row">
+                <div class="col-sm form-group">
+                    <label for="email">Email <span class="mandatory">*</span></label>
+                    <p class="vaild-message">(Eg. johndoe@example.com)</p>
+                    <input type="email" id="email" class="form-control" formControlName="email" placeholder="Enter the Email" />
+                </div>
 
-                <label for="rePassword">Repeat Password</label>
-                <p class="vaild-message">(Minimum 6 Characters)</p>
-                <input type="password" id="rePassword" name="rePassword" ngModel class="form-control" placeholder="Enter the Same Password Again" minlength="6" required />
+                <div class="col-sm form-group">
+                    <label for="mobile">Mobile <span class="mandatory">*</span></label>
+                    <p class="vaild-message">(Eg. 9876543210)</p>
+                    <input type="phone" id="mobile" class="form-control" formControlName="mobile" placeholder="Enter the Mobile Number" />
+                </div>
             </div>
 
-            <div class="center-align">
-                <button type="submit" [disabled]="signupForm.invalid" class="btn btn-dark"><i class="bi bi-person-add"></i> Sign Up</button>
-            </div>
+            <div class="row">
+                <div class="col-sm form-group">
+                    <label for="password">Password <span class="mandatory">*</span></label>
+                    <p class="vaild-message">(Minimum 6 Characters)</p>
+                    <input type="password" id="password" class="form-control" formControlName="password" placeholder="Enter the Password" minlength="6" />
+                </div>
 
-            <div class="center-align">
-                <p>Already a User? <a routerLink="/signin">Sign In</a></p>
+                <div class="col-sm form-group">
+                    <label for="rePassword">Repeat Password <span class="mandatory">*</span></label>
+                    <p class="vaild-message">(Minimum 6 Characters)</p>
+                    <input type="password" id="rePassword" class="form-control" formControlName="rePassword" placeholder="Enter the Same Password Again" minlength="6" />
+                </div>
             </div>
+        </div>
+
+        <div class="center-align">
+            <button type="submit" class="btn btn-dark" [disabled]="signupForm.invalid"><i class="bi bi-person-add"></i> Sign Up</button>
+        </div>
+
+        <div class="center-align">
+            <p>Already a User? <a routerLink="/signin">Sign In</a></p>
         </div>
     </form>
 </div>

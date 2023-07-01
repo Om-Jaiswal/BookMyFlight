@@ -1,7 +1,6 @@
 <div class="container">
-    <div *ngIf="fail" class="alert alert-danger" role="alert">
-        Invalid Credentials!
-    </div>
+    <div *ngIf="message" class="alert alert-success" role="alert">{{ message }}</div>
+    <div *ngIf="fail" class="alert alert-danger" role="alert">Invalid Credentials!</div>
     <form #signinForm="ngForm" (ngSubmit)="signin(signinForm)">
         <h3>Sign In</h3>
         <div class="row">

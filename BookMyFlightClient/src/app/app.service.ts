@@ -1,8 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable, catchError, map } from 'rxjs';
+import { MessageService } from './message.service';
 import { Flight } from './model/flight';
+import { SigninResponse } from './model/siginin-response';
+import { Details } from './model/details';
 
 @Injectable()
 export class AppService {
@@ -10,23 +13,31 @@ export class AppService {
   private authenticated = false;
 
   private token: string = '';
+  private username: string = '';
+  private details: any;
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router, private messageService: MessageService) { }
+
+  isAuthenticated(): boolean {
+    return this.authenticated;
+  }
 
   signin(username: string, password: string): void {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     const credentials = { username: username, password: password };
 
-    this.http.post('http://localhost:8000/bmf/login', credentials, { headers: headers, responseType: 'text' })
+    this.http.post<SigninResponse>('http://localhost:8200/user-profile/signin', credentials, { headers: headers })
       .subscribe(
-        (response: string) => {
-          this.token = response;
+        (response: SigninResponse) => {
+          this.token = response.jwtToken;
+          this.username = response.username;
+          this.details = response.details;
           this.authenticated = true;
           sessionStorage.setItem('token', this.token);
           this.router.navigate(['/home']);
         },
         (error) => {
-          console.log('Login failed:', error);
+          console.log('Signin Failed:', error);
         }
       );
   }
@@ -34,36 +45,48 @@ export class AppService {
   signout(): void {
     const token = sessionStorage.getItem('token');
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-    this.http.post('http://localhost:8000/bmf/logout', null, { headers })
+    this.http.post('http://localhost:8200/user-profile/signout', null, { headers })
       .subscribe(
         () => {
           this.token = '';
           this.authenticated = false;
           sessionStorage.removeItem('token');
+          this.messageService.setMessage('Signout Successfully!');
           this.router.navigate(['/signin']);
         },
         (error) => {
-          console.log('Logout failed:', error);
+          console.log('Signout Failed:', error);
         }
       );
   }
 
-  isAuthenticated(): boolean {
-    return this.authenticated;
+  signup(name: string, username: string, email: string, mobile: string, password: string): Observable<string> {
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    const newUser = { username: username, password: password, details: {name: name, email: email, mobile: mobile, address: ''} };
+    return this.http.post<string>('http://localhost:8200/user-profile/signup', newUser, { headers })
+      .pipe(
+        map(() => {
+          this.messageService.setMessage('Signup Successfully!');
+          this.router.navigate(['/signin']);
+          return 'Signup Successfully!';
+        }),
+        catchError((error) => {
+          console.log('Sigup Failed:', error);
+          throw error;
+        })
+      );
   }
 
-  signup(username: string, password: string): void {
+  update(details: Details): Observable<string> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    const credentials = { username: username, password: password };
-    this.http.post('http://localhost:8000/bmf/signup', credentials, { headers: headers, responseType: 'text' })
-    .subscribe(
-      (response: string) => {
-        this.router.navigate(['/signin']);
-      },
-      error => {
-        console.error('Signup failed:', error);
-      }
-    );
+    const params = new HttpParams().set('username', this.username);
+    return this.http.post<string>('http://localhost:8200/user-profile/update', details, { headers: headers, params: params })
+      .pipe(
+        catchError((error: any) => {
+          console.error('Update Failed:', error);
+          throw error;
+        })
+      );
   }
 
   getAllFlights(source: string, destination: string, date: string): Observable<Flight[]> {
@@ -72,7 +95,15 @@ export class AppService {
     .set('destination', destination)
     .set('date', date);
 
-    return this.http.get<Flight[]>('http://localhost:8000/flights', { params });
+    return this.http.get<Flight[]>('http://localhost:8100/search-flights/flights', { params });
+  }
+
+  getDetails(): any {
+    return this.details;
+  }
+
+  setDetails(details: Details): void {
+    this.details = details;
   }
 
 }

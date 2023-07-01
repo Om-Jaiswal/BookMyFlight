@@ -1,13 +1,13 @@
-.container .row .col-sm .card {
+.container .row .col-sm-5 .card {
     background-color: #ffffff !important;
     margin: 10px auto;
 }
 
-.container .row .col-sm .round-border {
+.container .row .col-sm-5 .round-border {
     border-radius: 25px;
 }
 
-.container .row .col-sm .card .black-border {
+.container .row .col-sm-5 .card .black-border {
     border: 2px solid black;
     border-radius: 25px;
     margin: 30px;
