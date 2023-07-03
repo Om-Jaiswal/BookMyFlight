@@ -44,7 +44,7 @@ export class BookingComponent implements OnInit {
 
   getAvailableSeats() {
     const params = new HttpParams().set('flightNumber', this.booking.flight.flightNumber);
-    this.http.get<FlightCapacity>('http://localhost:8300/book-flights/get-flight-capacity', { params })
+    this.http.get<FlightCapacity>('http://localhost:8765/book-flights/get-flight-capacity', { params })
       .subscribe(
         response => {
           this.flightCapacity = response;

@@ -1,31 +1,10 @@
 <div class="container">
     <div class="row">
-        <div class="col-lg-6 mx-auto">
+        <div class="col-lg-6 mx-auto" *ngFor="let offer of offers">
             <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
                 <div class="blockquote-custom-icon bg-dark text-white shadow-sm"><i class="bi bi-percent"></i></div>
-                <p class="mb-0 mt-2 font-italic">Get 50% off on every American Airlines flight. <br><br> Book low fares to destinations around the world and find the latest deals on airline tickets, hotels, car rentals and vacations.</p>
-                <footer class="blockquote-footer pt-4 mt-4 border-top">American Airlines</footer>
-            </blockquote>
-        </div>
-        <div class="col-lg-6 mx-auto">
-            <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
-                <div class="blockquote-custom-icon bg-dark text-white shadow-sm"><i class="bi bi-percent"></i></div>
-                <p class="mb-0 mt-2 font-italic">Get 30% off on every JetBlue flight. <br><br> Book low fares to destinations around the world and find the latest deals on airline tickets, hotels, car rentals and vacations.</p>
-                <footer class="blockquote-footer pt-4 mt-4 border-top">JetBlue</footer>
-            </blockquote>
-        </div>
-        <div class="col-lg-6 mx-auto">
-            <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
-                <div class="blockquote-custom-icon bg-dark text-white shadow-sm"><i class="bi bi-percent"></i></div>
-                <p class="mb-0 mt-2 font-italic">Get 40% off on every Southwest Airlines flight. <br><br> Book low fares to destinations around the world and find the latest deals on airline tickets, hotels, car rentals and vacations.</p>
-                <footer class="blockquote-footer pt-4 mt-4 border-top">Southwest Airlines</footer>
-            </blockquote>
-        </div>
-        <div class="col-lg-6 mx-auto">
-            <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
-                <div class="blockquote-custom-icon bg-dark text-white shadow-sm"><i class="bi bi-percent"></i></div>
-                <p class="mb-0 mt-2 font-italic">Get 20% off on every Delta flight. <br><br> Book low fares to destinations around the world and find the latest deals on airline tickets, hotels, car rentals and vacations.</p>
-                <footer class="blockquote-footer pt-4 mt-4 border-top">Delta</footer>
+                <p class="mb-0 mt-2 font-italic">{{ offer.title }} <br><br> {{ offer.description }}</p>
+                <footer class="blockquote-footer pt-4 mt-4 border-top">{{ offer.airline }}</footer>
             </blockquote>
         </div>
     </div>

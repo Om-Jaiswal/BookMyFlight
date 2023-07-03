@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
   }
 
   getAllCodes() {
-    this.http.get<string[]>('http://localhost:8100/search-flights/cities-code')
+    this.http.get<string[]>('http://localhost:8765/search-flights/cities-code')
       .subscribe(
         response => {
           this.cities = response;

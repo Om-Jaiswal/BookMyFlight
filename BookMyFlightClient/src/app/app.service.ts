@@ -6,6 +6,7 @@ import { MessageService } from './message.service';
 import { Flight } from './model/flight';
 import { SigninResponse } from './model/siginin-response';
 import { Details } from './model/details';
+import { Booked } from './model/booked';
 
 @Injectable()
 export class AppService {
@@ -26,7 +27,7 @@ export class AppService {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     const credentials = { username: username, password: password };
 
-    this.http.post<SigninResponse>('http://localhost:8200/user-profile/signin', credentials, { headers: headers })
+    this.http.post<SigninResponse>('http://localhost:8765/user-profile/signin', credentials, { headers: headers })
       .subscribe(
         (response: SigninResponse) => {
           this.token = response.jwtToken;
@@ -45,7 +46,7 @@ export class AppService {
   signout(): void {
     const token = sessionStorage.getItem('token');
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-    this.http.post('http://localhost:8200/user-profile/signout', null, { headers })
+    this.http.post('http://localhost:8765/user-profile/signout', null, { headers })
       .subscribe(
         () => {
           this.token = '';
@@ -63,7 +64,7 @@ export class AppService {
   signup(name: string, username: string, email: string, mobile: string, password: string): Observable<string> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     const newUser = { username: username, password: password, details: {name: name, email: email, mobile: mobile, address: ''} };
-    return this.http.post<string>('http://localhost:8200/user-profile/signup', newUser, { headers })
+    return this.http.post<string>('http://localhost:8765/user-profile/signup', newUser, { headers })
       .pipe(
         map(() => {
           this.messageService.setMessage('Signup Successfully!');
@@ -80,7 +81,7 @@ export class AppService {
   update(details: Details): Observable<string> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     const params = new HttpParams().set('username', this.username);
-    return this.http.post<string>('http://localhost:8200/user-profile/update', details, { headers: headers, params: params })
+    return this.http.post<string>('http://localhost:8765/user-profile/update', details, { headers: headers, params: params })
       .pipe(
         catchError((error: any) => {
           console.error('Update Failed:', error);
@@ -95,7 +96,11 @@ export class AppService {
     .set('destination', destination)
     .set('date', date);
 
-    return this.http.get<Flight[]>('http://localhost:8100/search-flights/flights', { params });
+    return this.http.get<Flight[]>('http://localhost:8765/search-flights/flights', { params });
+  }
+
+  getUsername(): any {
+    return this.username;
   }
 
   getDetails(): any {
@@ -104,6 +109,11 @@ export class AppService {
 
   setDetails(details: Details): void {
     this.details = details;
+  }
+
+  getAllBookings(): Observable<Booked[]> {
+    const params = new HttpParams().set('paidBy', this.getUsername());
+    return this.http.get<Booked[]>('http://localhost:8765/book-flights/get-bookings', { params });
   }
 
 }

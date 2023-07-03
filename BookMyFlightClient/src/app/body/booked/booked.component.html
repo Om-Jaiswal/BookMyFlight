@@ -1,1 +1,39 @@
-<p>booked works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let booking of bookings">
+            <div class="card">
+                <h5 class="card-header">{{ booking.date }}</h5>
+                <div class="card-body">
+                    <h5 class="card-title">{{ booking.airline }} - {{ booking.flightNumber }}</h5>
+                    <p class="card-text"><i class="bi bi-alarm"></i> {{ booking.departureTime }} - {{ booking.arrivalTime }}</p>
+                    <p class="card-text"><strong>From :</strong><br>{{ booking.source.iataCode }} - {{ booking.source.airportCity }} ({{ booking.source.airportName }})</p>
+                    <p class="card-text"><strong>To :</strong><br>{{ booking.destination.iataCode }} - {{ booking.destination.airportCity }} ({{ booking.destination.airportName }})</p>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Seat No.</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Gender</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let passenger of booking.passengerDetails; let i = index">
+                            <th scope="row">{{ i + 1 }}</th>
+                            <td>{{ booking.flightClass }} - {{ booking.seats[i] }}</td>
+                            <td>{{ passenger.name }}</td>
+                            <td>{{ passenger.age }} yrs</td>
+                            <td>{{ passenger.gender.charAt(0).toUpperCase() + passenger.gender.slice(1) }}</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <p class="card-text"><strong>Amount Paid: </strong> Rs. {{ booking.amountPaid / 100 }}</p>
+                    <div class="center-align">
+                        <a class="btn btn-dark">Print</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

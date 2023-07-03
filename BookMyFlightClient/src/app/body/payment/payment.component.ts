@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { PaymentService } from '../../payment.service';
+import { AppService } from '../../app.service';
 
 @Component({
   selector: 'app-payment',
@@ -17,7 +18,7 @@ export class PaymentComponent {
 
   passengers: any[] = [];
 
-  constructor(private router: Router, private http: HttpClient, private paymentService: PaymentService) {
+  constructor(private router: Router, private http: HttpClient, private paymentService: PaymentService, private service: AppService) {
     const navigation = this.router.getCurrentNavigation();
     if (navigation && navigation.extras && navigation.extras.state) {
       this.booking = navigation.extras.state['booking'];
@@ -56,7 +57,9 @@ export class PaymentComponent {
       passengerCount: this.booking['flight'].passengerCount,
       passengerDetails: this.passengers,
       seats: this.confirmSeats,
-      flightClass: this.flightClass
+      flightClass: this.flightClass,
+      amountPaid: amountToPay,
+      paidBy: this.service.getUsername()
     };
     this.paymentService.initiatePayment(amountToPay, booked);
   }
