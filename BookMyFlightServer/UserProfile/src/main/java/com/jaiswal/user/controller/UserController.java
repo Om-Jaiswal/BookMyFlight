@@ -7,8 +7,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.jaiswal.user.bean.Details;
+import com.jaiswal.user.bean.SigninResponse;
+import com.jaiswal.user.bean.User;
 import com.jaiswal.user.bean.UserCredentials;
 import com.jaiswal.user.service.UserService;
 
@@ -19,19 +23,24 @@ public class UserController {
 	@Autowired
 	private UserService service;
 
-    @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestBody UserCredentials credentials) {
-        return service.login(credentials);
+    @PostMapping("/signin")
+    public ResponseEntity<SigninResponse> signin(@RequestBody UserCredentials credentials) {
+        return service.signin(credentials);
     }
 
-    @PostMapping("/logout")
-    public ResponseEntity<String> logout(HttpServletRequest request) {
-    	return service.logout(request);
+    @PostMapping("/signout")
+    public ResponseEntity<String> signout(HttpServletRequest request) {
+    	return service.signout(request);
     }
     
     @PostMapping("/signup")
-    public ResponseEntity<String> signup(@RequestBody UserCredentials credentials) {
-    	return service.signup(credentials);
+    public ResponseEntity<String> signup(@RequestBody User newUser) {
+    	return service.signup(newUser);
+    }
+    
+    @PostMapping("/update")
+    public ResponseEntity<String> update(@RequestParam String username, @RequestBody Details details) {
+    	return service.update(username, details);
     }
    
 }

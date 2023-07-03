@@ -19,6 +19,8 @@ public class ApiGatewayConfiguration {
 						.uri("lb://search-flights"))
 				.route(p -> p.path("/user-profile/**")
 						.uri("lb://user-profile"))
+				.route(p -> p.path("/book-flights/**")
+						.uri("lb://book-flights"))
 				.build();
 	}
 }

@@ -1,5 +1,7 @@
 package com.jaiswal.user.config;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,6 +21,8 @@ import com.jaiswal.user.repository.UserRepository;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
+	private static final Logger logger = LoggerFactory.getLogger(SecurityConfig.class);
+	
 	@Autowired
     private UserRepository userRepository;
 
@@ -33,6 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         .roles(user.getRoles().toArray(new String[0]))
                         .build();
             } else {
+            	logger.warn("User Not Found!");
                 throw new UsernameNotFoundException("User Not Found!");
             }
         }).passwordEncoder(new BCryptPasswordEncoder());
@@ -43,9 +48,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable()
         	.cors().and()
             .authorizeRequests()
-            .antMatchers(HttpMethod.POST, "/user-profile/login").permitAll()
-            .antMatchers(HttpMethod.POST, "/user-profile/logout").permitAll()
+            .antMatchers(HttpMethod.POST, "/user-profile/signin").permitAll()
+            .antMatchers(HttpMethod.POST, "/user-profile/signout").permitAll()
             .antMatchers(HttpMethod.POST, "/user-profile/signup").permitAll()
+            .antMatchers(HttpMethod.POST, "/user-profile/update").permitAll()
             .anyRequest().authenticated()
             .and()
             .httpBasic();

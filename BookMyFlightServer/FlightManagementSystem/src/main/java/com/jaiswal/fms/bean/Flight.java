@@ -30,6 +30,6 @@ private String flightNumber;
 	
 	private String status;
 	
-	private double[] price;
+	private double[] prices;
 	
 }

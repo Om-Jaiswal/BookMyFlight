@@ -21,8 +21,7 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
     public MongoTemplate mongoTemplate() {
     	MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
         SimpleMongoClientDatabaseFactory databaseFactory = new SimpleMongoClientDatabaseFactory(mongoClient, "userdb");
-        MongoTemplate mongoTemplate = new MongoTemplate(databaseFactory);
-        return mongoTemplate;
+        return new MongoTemplate(databaseFactory);
     }
 
 }

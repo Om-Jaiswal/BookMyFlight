@@ -13,7 +13,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.jaiswal.search.service" level="WARN" additivity="false">
+    <logger name="com.jaiswal.search" level="WARN" additivity="false">
         <appender-ref ref="FILE"/>
     </logger>
 

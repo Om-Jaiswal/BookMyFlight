@@ -1,0 +1,47 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: flight-management-system-v1
+          uri: 'http://localhost:8000/'
+          predicates:
+            - Path=/flight-management-system/**
+        - id: search-flights-v1
+          uri: 'http://localhost:8100/'
+          predicates:
+            - Path=/search-flights/**
+        - id: user-profile-v1
+          uri: 'http://localhost:8200/'
+          predicates:
+            - Path=/user-profile/**
+        - id: book-flights-v1
+          uri: 'http://localhost:8300/'
+          predicates:
+            - Path=/book-flights/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+server:
+  port: 8765
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+eureka.instance:
+  prefer-ip-address: true

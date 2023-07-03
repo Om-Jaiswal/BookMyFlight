@@ -39,8 +39,7 @@ public class JwtTokenUtil {
 
 	public void invalidateToken(String token) {
 		// Here, we can implement additional logic to invalidate the token
-		// For example, we can add the token to a blacklist or perform any necessary
-		// cleanup
+		// For example, we can add the token to a blacklist or perform any necessary cleanup
 	}
 
 	private String createToken(Map<String, Object> claims, String subject) {
