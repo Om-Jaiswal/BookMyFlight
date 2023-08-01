@@ -4,15 +4,19 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.jaiswal.search.exception.AirportNotFoundException;
 import com.jaiswal.search.exception.FlightNotFoundException;
 import com.jaiswal.search.model.Airport;
 import com.jaiswal.search.model.Flight;
+import com.jaiswal.search.model.dto.AirportDTO;
+import com.jaiswal.search.model.dto.FlightDTO;
 import com.jaiswal.search.repository.AirportRepository;
 import com.jaiswal.search.repository.FlightRepository;
 
@@ -20,6 +24,9 @@ import com.jaiswal.search.repository.FlightRepository;
 public class SearchServiceImplementation implements SearchService {
 
 	private static final Logger logger = LoggerFactory.getLogger(SearchServiceImplementation.class);
+	
+	@Autowired
+	private ModelMapper modelMapper;
 
 	@Autowired
 	private AirportRepository airportRepository;
@@ -32,10 +39,10 @@ public class SearchServiceImplementation implements SearchService {
 	 * @param airport - airport object which will be added in the database
 	 * @return message - confirmation message
 	 */
-	public String addAirport(Airport airport) {
-		airportRepository.save(airport);
+	public ResponseEntity<String> addAirport(AirportDTO airport) {
+		airportRepository.save(modelMapper.map(airport, Airport.class));
 		logger.warn("Airport Added Successfully!");
-		return "Airport Added Successfully!";
+		return ResponseEntity.ok().body("{ \"message\": \"Airport Added Successfully!\" }");
 	}
 	
 	/**
@@ -43,10 +50,11 @@ public class SearchServiceImplementation implements SearchService {
 	 * @param airports - list of airport objects which will be added in the database
 	 * @return message - confirmation message
 	 */
-	public String addAirports(List<Airport> airports) {
-		airportRepository.saveAll(airports);
+	public ResponseEntity<String> addAirports(List<AirportDTO> airports) {
+		List<Airport> airportsList = airports.stream().map(dto -> modelMapper.map(dto, Airport.class)).toList();
+		airportRepository.saveAll(airportsList);
 		logger.warn("Airports Added Successfully!");
-		return "Airports Added Successfully!";
+		return ResponseEntity.ok().body("{ \"message\": \"Airports Added Successfully!\" }");
 	}
 
 	/**
@@ -54,10 +62,10 @@ public class SearchServiceImplementation implements SearchService {
 	 * @param flight - flight object which will be added in the database
 	 * @return message - confirmation message
 	 */
-	public String addFlight(Flight flight) {
-		flightRepository.save(flight);
+	public ResponseEntity<String> addFlight(FlightDTO flight) {
+		flightRepository.save(modelMapper.map(flight, Flight.class));
 		logger.warn("Flight Added Successfully!");
-		return "Flight Added Successfully!";
+		return ResponseEntity.ok().body("{ \"message\": \"Flight Added Successfully!\" }");
 	}
 
 	/**
@@ -65,10 +73,11 @@ public class SearchServiceImplementation implements SearchService {
 	 * @param flights - list of flight objects which will be added in the database
 	 * @return message - confirmation message
 	 */
-	public String addFlights(List<Flight> flights) {
-		flightRepository.saveAll(flights);
+	public ResponseEntity<String> addFlights(List<FlightDTO> flights) {
+		List<Flight> flightsList = flights.stream().map(dto -> modelMapper.map(dto, Flight.class)).toList();
+		flightRepository.saveAll(flightsList);
 		logger.warn("Flights Added Successfully!");
-		return "Flights Added Successfully!";
+		return ResponseEntity.ok().body("{ \"message\": \"Flights Added Successfully!\" }");
 	}
 
 	/**
@@ -83,6 +92,17 @@ public class SearchServiceImplementation implements SearchService {
 				.toList();
 		logger.warn("Cities Code Retrieved Successfully!");
 		return codes;
+	}
+	
+	/**
+	 * Method to get list of airlines
+	 * @return airlines - list of airlines
+	 */
+	public List<String> getAirlines() {
+		List<Flight> flights = flightRepository.findAll();
+		List<String> airlines = flights.stream().map(Flight::getAirline).distinct().toList();
+		logger.warn("Airlines Retrieved Successfully!");
+		return airlines;
 	}
 	
 	/**
@@ -118,7 +138,7 @@ public class SearchServiceImplementation implements SearchService {
 	 * @param airport - airport object will be updated
 	 * @return message - confirmation message
 	 */
-	public String updateAirport(String airportName, Airport airport) throws AirportNotFoundException {
+	public ResponseEntity<String> updateAirport(String airportName, AirportDTO airport) throws AirportNotFoundException {
 		Optional<Airport> airportOpt = airportRepository.findById(airportName);
 		if (airportOpt.isPresent()) {
 			Airport updatedAirport = airportOpt.get();
@@ -134,7 +154,7 @@ public class SearchServiceImplementation implements SearchService {
 			airportRepository.save(updatedAirport);
 
 			logger.warn("Airport Updated Successfully!");
-			return "Airport Updated Successfully!";
+			return ResponseEntity.ok().body("{ \"message\": \"Airport Updated Successfully!\" }");
 		}
 
 		logger.warn("UPDATE FAIL: {} airport does not exist!", airportName);
@@ -147,7 +167,7 @@ public class SearchServiceImplementation implements SearchService {
 	 * @param flight - flight object will be updated
 	 * @return message - confirmation message
 	 */
-	public String updateFlight(String flightNumber, Flight flight) throws FlightNotFoundException {
+	public ResponseEntity<String> updateFlight(String flightNumber, FlightDTO flight) throws FlightNotFoundException {
 		Optional<Flight> flightOpt = flightRepository.findById(flightNumber);
 		if (flightOpt.isPresent()) {
 			Flight updatedFlight = flightOpt.get();
@@ -155,6 +175,7 @@ public class SearchServiceImplementation implements SearchService {
 			updatedFlight.setDepartureTime(flight.getDepartureTime());
 			updatedFlight.setArrivalTime(flight.getArrivalTime());
 			updatedFlight.setAirline(flight.getAirline());
+			updatedFlight.setAirlineImage(flight.getAirlineImage());
 			updatedFlight.setDate(flight.getDate());
 			updatedFlight.setSource(flight.getSource());
 			updatedFlight.setDestination(flight.getDestination());
@@ -164,7 +185,7 @@ public class SearchServiceImplementation implements SearchService {
 			flightRepository.save(updatedFlight);
 
 			logger.warn("Flight Updated Successfully!");
-			return "Flight Updated Successfully!";
+			return ResponseEntity.ok().body("{ \"message\": \"Flight Updated Successfully!\" }");
 		}
 
 		logger.warn("UPDATE FAIL: Flight number {} does not exist!", flightNumber);
@@ -176,14 +197,14 @@ public class SearchServiceImplementation implements SearchService {
 	 * @param airportName - name of the airport
 	 * @return message - confirmation message
 	 */
-	public String deleteAirport(String airportName) throws AirportNotFoundException {
+	public ResponseEntity<String> deleteAirport(String airportName) throws AirportNotFoundException {
 		Optional<Airport> airportOpt = airportRepository.findById(airportName);
 		if (airportOpt.isPresent()) {
 
 			airportRepository.deleteById(airportName);
 
 			logger.warn("Airport Deleted Successfully!");
-			return "Airport Deleted Successfully!";
+			return ResponseEntity.ok().body("{ \"message\": \"Airport Deleted Successfully!\" }");
 		}
 
 		logger.warn("DELETE FAIL: {} airport does not exist!", airportName);
@@ -195,14 +216,14 @@ public class SearchServiceImplementation implements SearchService {
 	 * @param flightNumber - flight number
 	 * @return message - confirmation message
 	 */
-	public String deleteFlight(String flightNumber) throws FlightNotFoundException {
+	public ResponseEntity<String> deleteFlight(String flightNumber) throws FlightNotFoundException {
 		Optional<Flight> flightOpt = flightRepository.findById(flightNumber);
 		if (flightOpt.isPresent()) {
 
 			flightRepository.deleteById(flightNumber);
 
 			logger.warn("Flight Deleted Successfully!");
-			return "Flight Deleted Successfully!";
+			return ResponseEntity.ok().body("{ \"message\": \"Flight Deleted Successfully!\" }");
 		}
 
 		logger.warn("DELETE FAIL: Flight number {} does not exist!", flightNumber);

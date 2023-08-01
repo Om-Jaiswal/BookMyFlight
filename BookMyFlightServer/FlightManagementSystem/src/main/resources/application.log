@@ -1,0 +1,76 @@
+2023-07-12 02:04:04,137 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:116] Offer Deleted Successfully!
+2023-07-12 02:04:04,148 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-12 02:04:04,160 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-12 02:04:04,162 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-12 02:09:34,142 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:116] Offer Deleted Successfully!
+2023-07-12 02:09:34,152 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-12 02:09:34,178 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-12 02:09:34,180 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-12 02:10:18,060 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:116] Offer Deleted Successfully!
+2023-07-12 02:10:18,070 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-12 02:10:18,073 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:85] Offer doesn't exist!
+2023-07-12 02:10:18,093 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-12 02:10:18,095 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-12 02:15:48,139 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:116] Offer Deleted Successfully!
+2023-07-12 02:15:48,149 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-12 02:15:48,152 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:85] Offer doesn't exist!
+2023-07-12 02:15:48,163 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-12 02:15:48,165 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-12 02:21:12,436 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:116] Offer Deleted Successfully!
+2023-07-12 02:21:12,449 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-12 02:21:12,451 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:85] Offer doesn't exist!
+2023-07-12 02:21:12,462 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-12 02:21:12,464 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-12 02:27:01,548 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:116] Offer Deleted Successfully!
+2023-07-12 02:27:01,560 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-12 02:27:01,562 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:85] Offer doesn't exist!
+2023-07-12 02:27:01,588 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-12 02:27:01,589 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-12 02:31:11,827 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:116] Offer Deleted Successfully!
+2023-07-12 02:31:11,837 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-12 02:31:11,840 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:85] Offer doesn't exist!
+2023-07-12 02:31:11,850 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-12 02:31:11,851 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-12 02:33:19,786 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:116] Offer Deleted Successfully!
+2023-07-12 02:33:19,799 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-12 02:33:19,802 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:85] Offer doesn't exist!
+2023-07-12 02:33:19,813 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-12 02:33:19,815 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-12 02:38:24,446 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:116] Offer Deleted Successfully!
+2023-07-12 02:38:24,457 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-12 02:38:24,461 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:85] Offer doesn't exist!
+2023-07-12 02:38:24,490 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-12 02:38:24,492 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-12 02:47:53,657 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:116] Offer Deleted Successfully!
+2023-07-12 02:47:53,670 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-12 02:47:53,673 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:85] Offer doesn't exist!
+2023-07-12 02:47:53,689 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:128] Contact Added Successfully!
+2023-07-12 02:47:53,692 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-12 02:47:53,694 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-12 02:49:53,160 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:116] Offer Deleted Successfully!
+2023-07-12 02:49:53,180 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-12 02:49:53,184 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:85] Offer doesn't exist!
+2023-07-12 02:49:53,229 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:128] Contact Added Successfully!
+2023-07-12 02:49:53,232 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-12 02:49:53,234 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-12 02:50:57,409 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:116] Offer Deleted Successfully!
+2023-07-12 02:50:57,424 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-12 02:50:57,427 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:85] Offer doesn't exist!
+2023-07-12 02:50:57,429 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:105] Offers Fetched!
+2023-07-12 02:50:57,462 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:128] Contact Added Successfully!
+2023-07-12 02:50:57,465 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-12 02:50:57,467 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-13 19:21:54,070 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:121] Offer doesn't exist!
+2023-07-13 19:21:54,085 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:118] Offer Deleted Successfully!
+2023-07-13 19:21:54,089 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:82] Offer Updated Successfully!
+2023-07-13 19:21:54,092 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:85] Offer doesn't exist!
+2023-07-13 19:21:54,095 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:105] Offers Fetched!
+2023-07-13 19:21:54,131 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:134] Contact Added Successfully!
+2023-07-13 19:21:54,134 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:64] Offer Added Successfully!
+2023-07-13 19:21:54,136 WARN [main] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:96] Offer Fetched!
+2023-07-24 12:39:52,333 WARN [http-nio-8000-exec-1] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:105] Offers Fetched!
+2023-07-24 12:39:53,937 WARN [http-nio-8000-exec-2] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:105] Offers Fetched!
+2023-07-24 12:48:14,024 WARN [http-nio-8000-exec-4] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:105] Offers Fetched!
+2023-07-24 13:23:33,861 WARN [http-nio-8000-exec-6] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:105] Offers Fetched!
+2023-07-24 13:35:28,945 WARN [http-nio-8000-exec-8] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:105] Offers Fetched!
+2023-07-24 14:11:05,394 WARN [http-nio-8000-exec-10] c.j.f.s.FMSServiceImplementation [FMSServiceImplementation.java:105] Offers Fetched!

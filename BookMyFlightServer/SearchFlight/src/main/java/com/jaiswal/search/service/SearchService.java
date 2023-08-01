@@ -3,24 +3,29 @@ package com.jaiswal.search.service;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.http.ResponseEntity;
+
 import com.jaiswal.search.exception.AirportNotFoundException;
 import com.jaiswal.search.exception.FlightNotFoundException;
 import com.jaiswal.search.model.Airport;
 import com.jaiswal.search.model.Flight;
+import com.jaiswal.search.model.dto.AirportDTO;
+import com.jaiswal.search.model.dto.FlightDTO;
 
 public interface SearchService {
 	
-	public String addAirport(Airport airport);
-	public String addAirports(List<Airport> airports);
-	public String addFlight(Flight flight);
-	public String addFlights(List<Flight> flights);
+	public ResponseEntity<String> addAirport(AirportDTO airport);
+	public ResponseEntity<String> addAirports(List<AirportDTO> airports);
+	public ResponseEntity<String> addFlight(FlightDTO flight);
+	public ResponseEntity<String> addFlights(List<FlightDTO> flights);
 	public List<String> getCitiesCode();
+	public List<String> getAirlines();
 	public List<Airport> searchAirports();
 	public List<Flight> searchFlights();
 	public List<Flight> searchFlightBySourceDestinationDate(String source, String destination, Date date);
-	public String updateAirport(String airportName, Airport airport) throws AirportNotFoundException;
-	public String updateFlight(String flightNumber, Flight flight) throws FlightNotFoundException;
-	public String deleteAirport(String airportName) throws AirportNotFoundException;
-	public String deleteFlight(String flightNumber) throws FlightNotFoundException;
+	public ResponseEntity<String> updateAirport(String airportName, AirportDTO airport) throws AirportNotFoundException;
+	public ResponseEntity<String> updateFlight(String flightNumber, FlightDTO flight) throws FlightNotFoundException;
+	public ResponseEntity<String> deleteAirport(String airportName) throws AirportNotFoundException;
+	public ResponseEntity<String> deleteFlight(String flightNumber) throws FlightNotFoundException;
 	
 }

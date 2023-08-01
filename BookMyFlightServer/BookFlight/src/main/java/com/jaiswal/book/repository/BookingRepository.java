@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.jaiswal.book.model.Booking;
 
 @Repository
-public interface BookingRepository extends MongoRepository<Booking, String> {
+public interface BookingRepository extends MongoRepository<Booking, Long> {
+	public Booking findByBookingId(long bookingId);
 	public List<Booking> findByPaidBy(String paidBy);
 }

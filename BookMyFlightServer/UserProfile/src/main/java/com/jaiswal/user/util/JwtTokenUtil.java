@@ -24,7 +24,7 @@ public class JwtTokenUtil {
 	private Key key = Keys.secretKeyFor(SignatureAlgorithm.HS512);
 
 	// Convert the key to a Base64 string
-	private String secret = Base64.getEncoder().encodeToString(key.getEncoded());;
+	private String secret = Base64.getEncoder().encodeToString(key.getEncoded());
 
 	private Long expiration = 3600L;
 
@@ -42,6 +42,7 @@ public class JwtTokenUtil {
 		// For example, we can add the token to a blacklist or perform any necessary cleanup
 	}
 
+	@SuppressWarnings("deprecation")
 	private String createToken(Map<String, Object> claims, String subject) {
 		return Jwts.builder().setClaims(claims).setSubject(subject).setIssuedAt(new Date())
 				.setExpiration(new Date(System.currentTimeMillis() + expiration * 1000))
@@ -66,6 +67,7 @@ public class JwtTokenUtil {
 		return claimsResolver.apply(claims);
 	}
 
+	@SuppressWarnings("deprecation")
 	private Claims extractAllClaims(String token) {
 		return Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody();
 	}

@@ -1,0 +1,65 @@
+2023-07-12 02:51:41,636 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:160] Booking Updated Successfully!
+2023-07-12 02:51:41,643 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:184] Bookings Fetched!
+2023-07-12 02:51:41,645 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:174] Booking Fetched!
+2023-07-12 02:51:41,647 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:102] Flight Capacity Deleted Successfully!
+2023-07-12 02:51:41,648 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:56] Flight Capacity Added Successfully!
+2023-07-12 02:51:41,649 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:91] Flight Capacity Fetched!
+2023-07-12 02:51:41,651 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:195] Booking Deleted Successfully!
+2023-07-12 02:51:41,653 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:129] Payment Published!
+2023-07-12 02:51:41,653 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:131] Booking Added Successfully!
+2023-07-12 02:51:41,654 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:80] Flight doesn't exist!
+2023-07-12 02:51:41,656 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:163] Booking doesn't exist!
+2023-07-12 02:51:41,657 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:77] Flight Capacity Updated Successfully!
+2023-07-13 18:53:57,574 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:166] Booking Updated Successfully!
+2023-07-13 18:53:57,581 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:190] Bookings Fetched!
+2023-07-13 18:53:57,582 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:180] Booking Fetched!
+2023-07-13 18:53:57,584 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:104] Flight Capacity Deleted Successfully!
+2023-07-13 18:53:57,586 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:56] Flight Capacity Added Successfully!
+2023-07-13 18:53:57,587 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:91] Flight Capacity Fetched!
+2023-07-13 18:53:57,589 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:203] Booking Deleted Successfully!
+2023-07-13 18:53:57,590 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:206] Booking doesn't exist!
+2023-07-13 18:53:57,591 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:107] Flight doesn't exist!
+2023-07-13 18:53:57,593 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:135] Payment Published!
+2023-07-13 18:53:57,593 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:137] Booking Added Successfully!
+2023-07-13 18:53:57,594 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:80] Flight doesn't exist!
+2023-07-13 18:53:57,595 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:169] Booking doesn't exist!
+2023-07-13 18:53:57,596 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:77] Flight Capacity Updated Successfully!
+2023-07-13 18:54:06,161 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:166] Booking Updated Successfully!
+2023-07-13 18:54:06,171 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:190] Bookings Fetched!
+2023-07-13 18:54:06,173 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:180] Booking Fetched!
+2023-07-13 18:54:06,175 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:104] Flight Capacity Deleted Successfully!
+2023-07-13 18:54:06,177 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:56] Flight Capacity Added Successfully!
+2023-07-13 18:54:06,178 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:91] Flight Capacity Fetched!
+2023-07-13 18:54:06,180 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:203] Booking Deleted Successfully!
+2023-07-13 18:54:06,181 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:206] Booking doesn't exist!
+2023-07-13 18:54:06,183 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:107] Flight doesn't exist!
+2023-07-13 18:54:06,185 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:135] Payment Published!
+2023-07-13 18:54:06,185 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:137] Booking Added Successfully!
+2023-07-13 18:54:06,186 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:80] Flight doesn't exist!
+2023-07-13 18:54:06,188 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:169] Booking doesn't exist!
+2023-07-13 18:54:06,189 WARN [main] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:77] Flight Capacity Updated Successfully!
+2023-07-24 13:24:34,181 WARN [http-nio-8300-exec-1] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:190] Bookings Fetched!
+2023-07-24 13:24:45,687 WARN [http-nio-8300-exec-2] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:190] Bookings Fetched!
+2023-07-24 13:25:21,251 WARN [http-nio-8300-exec-3] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:91] Flight Capacity Fetched!
+2023-07-24 13:32:28,101 WARN [http-nio-8300-exec-5] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:56] Flight Capacity Added Successfully!
+2023-07-24 13:32:43,942 WARN [http-nio-8300-exec-6] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:56] Flight Capacity Added Successfully!
+2023-07-24 13:32:56,889 WARN [http-nio-8300-exec-7] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:56] Flight Capacity Added Successfully!
+2023-07-24 13:34:32,476 WARN [http-nio-8300-exec-9] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:91] Flight Capacity Fetched!
+2023-07-24 13:35:04,749 WARN [http-nio-8300-exec-1] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:190] Bookings Fetched!
+2023-07-24 13:37:49,690 WARN [http-nio-8300-exec-1] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:199] Bookings Fetched!
+2023-07-24 13:41:39,368 WARN [http-nio-8300-exec-3] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:199] Bookings Fetched!
+2023-07-24 13:45:17,912 WARN [http-nio-8300-exec-5] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:199] Bookings Fetched!
+2023-07-24 13:45:44,383 WARN [http-nio-8300-exec-6] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:199] Bookings Fetched!
+2023-07-24 13:46:28,540 WARN [http-nio-8300-exec-7] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:199] Bookings Fetched!
+2023-07-24 13:53:14,352 WARN [http-nio-8300-exec-1] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:190] Bookings Fetched!
+2023-07-24 13:54:20,626 WARN [http-nio-8300-exec-3] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:91] Flight Capacity Fetched!
+2023-07-24 13:54:25,923 WARN [http-nio-8300-exec-4] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:91] Flight Capacity Fetched!
+2023-07-24 13:54:57,977 WARN [http-nio-8300-exec-5] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:135] Payment Published!
+2023-07-24 13:54:57,977 WARN [http-nio-8300-exec-5] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:137] Booking Added Successfully!
+2023-07-24 13:55:01,334 WARN [http-nio-8300-exec-6] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:190] Bookings Fetched!
+2023-07-24 14:09:05,594 WARN [http-nio-8300-exec-8] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:91] Flight Capacity Fetched!
+2023-07-24 14:10:11,084 WARN [http-nio-8300-exec-10] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:135] Payment Published!
+2023-07-24 14:10:11,085 WARN [http-nio-8300-exec-10] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:137] Booking Added Successfully!
+2023-07-24 14:10:12,237 WARN [http-nio-8300-exec-1] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:190] Bookings Fetched!
+2023-07-24 14:10:43,847 WARN [http-nio-8300-exec-2] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:91] Flight Capacity Fetched!
+2023-07-24 14:11:38,365 WARN [http-nio-8300-exec-3] c.j.b.s.BookServiceImplementation [BookServiceImplementation.java:199] Bookings Fetched!

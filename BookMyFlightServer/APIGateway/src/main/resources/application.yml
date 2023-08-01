@@ -22,6 +22,10 @@ spring:
           uri: 'http://localhost:8300/'
           predicates:
             - Path=/book-flights/**
+        - id: payment-v1
+          uri: 'http://localhost:8400/'
+          predicates:
+            - Path=/payment/**
       globalcors:
         corsConfigurations:
           '[/**]':

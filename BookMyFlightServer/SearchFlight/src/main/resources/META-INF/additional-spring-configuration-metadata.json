@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "spring.webflux.cors.cors-max-age",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.webflux.cors.cors-max-age'"
+  },
+  {
+    "name": "spring.webflux.cors.allowed-origins",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.webflux.cors.allowed-origins'"
+  },
+  {
+    "name": "spring.webflux.cors.allowed-methods",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.webflux.cors.allowed-methods'"
+  },
+  {
+    "name": "spring.webflux.cors.allowed-headers",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.webflux.cors.allowed-headers'"
+  },
+  {
+    "name": "spring.resources.cache.cachecontrol.images.no-cache",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.resources.cache.cachecontrol.images.no-cache'"
+  }
+]}

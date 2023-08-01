@@ -1,0 +1,9 @@
+2023-07-13 19:00:07,588 WARN [main] c.j.p.s.PaymentServiceImplementation [PaymentServiceImplementation.java:94] Payment Deleted Successfully!
+2023-07-13 19:00:07,599 WARN [main] c.j.p.s.PaymentServiceImplementation [PaymentServiceImplementation.java:38] Payment Added Successfully!
+2023-07-13 19:00:07,603 WARN [main] c.j.p.s.PaymentServiceImplementation [PaymentServiceImplementation.java:97] Payment doesn't exist!
+2023-07-13 19:00:07,604 WARN [main] c.j.p.s.PaymentServiceImplementation [PaymentServiceImplementation.java:81] Payments Fetched!
+2023-07-13 19:00:07,607 WARN [main] c.j.p.s.PaymentServiceImplementation [PaymentServiceImplementation.java:58] Payment Updated Successfully!
+2023-07-13 19:00:07,608 WARN [main] c.j.p.s.PaymentServiceImplementation [PaymentServiceImplementation.java:61] Payment doesn't exist!
+2023-07-13 19:00:07,609 WARN [main] c.j.p.s.PaymentServiceImplementation [PaymentServiceImplementation.java:72] Payment Fetched!
+2023-07-24 13:54:58,029 WARN [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.j.p.s.PaymentServiceImplementation [PaymentServiceImplementation.java:38] Payment Added Successfully!
+2023-07-24 14:10:11,092 WARN [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.j.p.s.PaymentServiceImplementation [PaymentServiceImplementation.java:38] Payment Added Successfully!
