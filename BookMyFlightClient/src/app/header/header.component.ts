@@ -10,13 +10,20 @@ import { AppService } from '../app.service';
 })
 export class HeaderComponent {
 
-  constructor(private service: AppService) { }
+  admin: boolean = false;
+
+  constructor(private service: AppService) {}
 
   isSignedIn(): boolean {
+    if(this.service.isAdmin()) {
+      this.admin = true;
+      return true;
+    }
     return this.service.isAuthenticated();
   }
 
   signout() {
+    this.admin = false;
     this.service.signout();
   }
 }

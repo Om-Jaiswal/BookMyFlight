@@ -10,7 +10,9 @@ import { FlightsComponent } from './body/flights/flights.component';
 import { BookingComponent } from './body/booking/booking.component';
 import { PaymentComponent } from './body/payment/payment.component';
 import { BookedComponent } from './body/booked/booked.component';
+import { AdminComponent } from './admin/admin.component';
 import { AppGuard } from './app.guard';
+import { AdminGuard } from './app.admin.gaurd';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -23,7 +25,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent, canActivate: [AppGuard] },
   { path: 'booking', component: BookingComponent, canActivate: [AppGuard] },
   { path: 'payment', component: PaymentComponent, canActivate: [AppGuard] },
-  { path: 'booked', component: BookedComponent, canActivate: [AppGuard] }
+  { path: 'booked', component: BookedComponent, canActivate: [AppGuard] },
+  { path: 'admin', component: AdminComponent, canActivate: [AdminGuard] }
 ];
 
 @NgModule({

@@ -27,6 +27,9 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeflex/primeflex.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -83,6 +86,7 @@
               "zone.js",
               "zone.js/testing"
             ],
+            "browsers": "Brave",
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",

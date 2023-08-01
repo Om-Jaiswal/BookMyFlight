@@ -1,0 +1,134 @@
+<div class="grid">
+    <div class="col">
+
+        <div *ngIf="form.controls['flightNumber'].errors?.['pattern']" class="alert alert-info py-0" role="alert">
+            <strong>Invalid Flight Number:</strong> Capital letters and numbers only!
+        </div>
+        <div *ngIf="isInvalidCity" class="alert alert-info py-0" role="alert">
+            <strong>Invalid City:</strong> Select from available options!
+        </div>
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="formgrid grid">
+
+                <div class="field col-12 md:col-4 mb-2">
+                    <label for="flightNumber" class="mr-5"><strong>Flight Number</strong><span class="required">*</span></label>
+                    <input type="text" pInputText class="w-full py-1 uppercase" maxlength="6" formControlName="flightNumber" placeholder="XXX000" />
+                </div>
+                <div class="field col-12 md:col-4 mb-2">
+                    <label for="flightAirline" class="mr-5"><strong>Flight Airline</strong><span class="required">*</span></label>
+                    <input type="text" pInputText class="w-full py-1" maxlength="50" formControlName="flightAirline" placeholder="Airline" />
+                </div>
+                <div class="field col-12 md:col-4 mb-2">
+                    <label for="flightStatus" class="mr-5"><strong>Flight Status</strong><span class="required">*</span></label>
+                    <span class="p-fluid">
+                        <p-dropdown #flightStatusDropdown [options]="status" formControlName="flightStatus" optionLabel="name"></p-dropdown>
+                    </span>
+                </div>
+
+                <div class="field col-12 md:col-6 mb-2">
+                    <label for="sourceCity" class="mr-8"><strong>Source City</strong><span class="required">*</span></label>
+                    <span class="p-fluid">
+                        <p-autoComplete formControlName="sourceCity" [suggestions]="filteredCities" (completeMethod)="filterCities($event)" placeholder="Code - City (Airport)"></p-autoComplete>
+                    </span>
+                </div>
+                <div class="field col-12 md:col-6 mb-2">
+                    <label for="destinationCity" class="mr-8"><strong>Destination City</strong><span class="required">*</span></label>
+                    <span class="p-fluid">
+                        <p-autoComplete formControlName="destinationCity" [suggestions]="filteredCities" (completeMethod)="filterCities($event)" placeholder="Code - City (Airport)"></p-autoComplete>
+                    </span>
+                </div>
+
+                <div class="field col-12 md:col-4 mb-2">
+                    <label for="journeyDate" class="mr-5"><strong>Journey Date</strong><span class="required">*</span></label>
+                    <span class="p-fluid">
+                        <p-calendar formControlName="journeyDate" [dateFormat]="'dd/mm/yy'" appendTo="body" placeholder="DD/MM/YYYY"></p-calendar>
+                    </span>
+                </div>
+                <div class="field col-12 md:col-4 mb-2">
+                    <label for="departureTime" class="mr-5"><strong>Departure Time</strong><span class="required">*</span></label>
+                    <span class="p-fluid">
+                        <p-calendar formControlName="departureTime" [showTime]="true" [timeOnly]="true" [dateFormat]="'hh:mm'" appendTo="body" placeholder="00:00"></p-calendar>
+                    </span>
+                </div>
+                <div class="field col-12 md:col-4 mb-2">
+                    <label for="arrivalTime" class="mr-5"><strong>Arrival Time</strong><span class="required">*</span></label>
+                    <span class="p-fluid">
+                        <p-calendar formControlName="arrivalTime" [showTime]="true" [timeOnly]="true" [dateFormat]="'hh:mm'" appendTo="body" placeholder="00:00"></p-calendar>
+                    </span>
+                </div>
+
+                <div class="field col-12 md:col-4 mb-2">
+                    <label for="standardPrice" class="mr-5"><strong>Standard Price (INR)</strong><span class="required">*</span></label>
+                    <span class="p-fluid">
+                        <p-inputNumber formControlName="standardPrice" inputId="integeronly" placeholder="0"></p-inputNumber>
+                    </span>
+                </div>
+                <div class="field col-12 md:col-4 mb-2">
+                    <label for="economyPrice" class="mr-5"><strong>Economy Price (INR)</strong><span class="required">*</span></label>
+                    <span class="p-fluid">
+                        <p-inputNumber formControlName="economyPrice" inputId="integeronly" placeholder="0"></p-inputNumber>
+                    </span>
+                </div>
+                <div class="field col-12 md:col-4 mb-2">
+                    <label for="businessPrice" class="mr-5"><strong>Business Price (INR)</strong><span class="required">*</span></label>
+                    <span class="p-fluid">
+                        <p-inputNumber formControlName="businessPrice" inputId="integeronly" placeholder="0"></p-inputNumber>
+                    </span>
+                </div>
+
+                <div class="field col-12 md:col-12">
+                    <div class="drop-zone" (dragover)="onDragOver($event)" (dragleave)="onDragLeave($event)" (drop)="onDrop($event)">
+                        <p class="mt-0 mb-1"><strong>Airline Image</strong></p>
+                        <p-toast></p-toast>
+                        <p-fileUpload name="image" url= "{{ gatewayUrl }}search-flights/upload" (onUpload)="onFileUpload($event)" [multiple]="false" accept="image/*">
+                            <ng-template pTemplate="content">
+                                <p *ngIf="uploadedFile">{{ uploadedFile.name }} - {{ uploadedFile.size }} bytes</p>
+                            </ng-template>
+                        </p-fileUpload>
+                        <p class="mt-1 mb-0">Drag and Drop Airline Image Here</p>
+                    </div>
+                </div>
+
+                <div class="field col-12 md:12 flex justify-content-center">
+                    <p-button type="submit" *ngIf="updateFlight" styleClass="pt-2 pb-2" label="Update Flight" [disabled]="form.invalid"></p-button>
+                    <p-button type="submit" *ngIf="!updateFlight" styleClass="pt-2 pb-2" label="Add Flight" [disabled]="form.invalid"></p-button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <div class="col">
+        <div class="card">
+            <p-dataView [value]="flights" [rows]="2" [paginator]="true"> 
+                <ng-template let-flight pTemplate="listItem">
+                    <div class="col-12">
+                        <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
+                            <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" src="{{ url + flight.airlineImage }}" [alt]="flight.airline" />
+                            <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
+                                <div class="flex flex-column align-items-center sm:align-items-start gap-1">
+                                    <div class="text-base font-bold text-900">{{ flight.airline }} - {{ flight.flightNumber }} <p-tag [value]="flight.status" [severity]="getSeverity(flight) || undefined"></p-tag></div>
+                                    <div class="text-sm text-900"><i class="pi pi-calendar"></i> {{ addOneDay(flight.date) }}</div>
+                                    <div class="text-sm text-900"><i class="pi pi-clock"></i> {{ flight.departureTime }} - {{ flight.arrivalTime }}</div>
+                                    <div class="text-sm text-900">{{ flight.source.slice(0, flight.source.indexOf('(')) }}</div>
+                                    <div class="text-sm text-900">{{ flight.source.slice(flight.source.indexOf('('),flight.source.indexOf(')') + 1) }}</div>
+                                    <div class="text-sm text-900">{{ flight.destination.slice(0, flight.destination.indexOf('(')) }}</div>
+                                    <div class="text-sm text-900">{{ flight.destination.slice(flight.destination.indexOf('('),flight.destination.indexOf(')') + 1) }}</div>
+                                </div>
+                                <div class="flex flex-column align-items-center sm:align-items-end gap-1">
+                                    <div class="text-sm">Standard - {{ '₹' + flight.prices[0] }}</div>
+                                    <div class="text-sm">Economy - {{ '₹' + flight.prices[1] }}</div>
+                                    <div class="text-sm">Business - {{ '₹' + flight.prices[2] }}</div>
+                                    <div class="flex flex-wrap mt-2">
+                                        <button pButton icon="pi pi-pencil" class="md:align-self-end mb-2 mx-1 p-button-rounded bg-orange-500 border-blue-50" (click)="updateFill(flight)"></button>
+                                        <button pButton icon="pi pi-trash" class="md:align-self-end mb-2 mx-1 p-button-rounded bg-red-500 border-blue-50" (click)="deleteFlight(flight.flightNumber)"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-dataView>
+        </div>
+    </div>
+  </div>

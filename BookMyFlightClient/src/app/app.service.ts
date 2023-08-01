@@ -12,6 +12,7 @@ import { Booked } from './model/booked';
 export class AppService {
 
   private authenticated = false;
+  private admin = false;
 
   private token: string = '';
   private username: string = '';
@@ -21,6 +22,16 @@ export class AppService {
 
   isAuthenticated(): boolean {
     return this.authenticated;
+  }
+
+  checkAdmin() {
+    if(this.authenticated && this.username === 'admin') {
+      this.admin = true;
+    }
+  }
+
+  isAdmin(): boolean {
+    return this.admin;
   }
 
   signin(username: string, password: string): void {
@@ -34,6 +45,7 @@ export class AppService {
           this.username = response.username;
           this.details = response.details;
           this.authenticated = true;
+          this.checkAdmin();
           sessionStorage.setItem('token', this.token);
           this.router.navigate(['/home']);
         },

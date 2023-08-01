@@ -14,6 +14,9 @@
                     <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" *ngIf="admin" routerLink="/admin">Admin</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" routerLink="/offers">Offers</a>
                 </li>
                 <li class="nav-item">

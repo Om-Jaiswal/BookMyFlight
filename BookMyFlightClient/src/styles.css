@@ -1,4 +1,8 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeflex/primeflex.css";
+@import "primeicons/primeicons.css";
 
 html {
     background: url(assets/background.png) no-repeat center center fixed;
@@ -10,4 +14,5 @@ html {
 
 body {
     background-color: transparent !important;
+    font-family: var(--font-family);
 }

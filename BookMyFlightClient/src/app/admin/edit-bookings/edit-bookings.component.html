@@ -1,0 +1,27 @@
+<div class="card">
+    <p-dataView [value]="bookings" [rows]="2" [paginator]="true"> 
+        <ng-template let-booking pTemplate="listItem">
+            <div class="col-12">
+                <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
+                    <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
+                        <div class="flex flex-column align-items-center sm:align-items-start gap-1">
+                            <div class="text-base font-bold text-900">{{ booking.airline }} - {{ booking.flightNumber }}</div>
+                            <div class="text-sm text-900"><i class="pi pi-calendar"></i> {{ booking.date }}</div>
+                            <div class="text-sm text-900"><i class="pi pi-clock"></i> {{ booking.departureTime }} - {{ booking.arrivalTime }}</div>
+                            <div class="text-sm text-900">{{ booking.source.iataCode }} - {{ booking.source.airportCity }}</div>
+                            <div class="text-sm text-900">{{ booking.source.airportName }}</div>
+                            <div class="text-sm text-900">{{ booking.destination.iataCode }} - {{ booking.destination.airportCity }}</div>
+                            <div class="text-sm text-900">{{ booking.destination.airportName }}</div>
+                        </div>
+                        <div class="flex flex-column align-items-center sm:align-items-end gap-1">
+                            <div class="text-sm"  *ngFor="let passenger of booking.passengerDetails; let i = index">
+                                <p>{{ booking.seats[i] }} - {{ passenger.name }} - {{ passenger.age }} - {{ passenger.gender }}</p>
+                            </div>
+                            <div class="text-sm text-900">Amount Paid : {{ booking.amountPaid / 100 }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </p-dataView>
+</div>

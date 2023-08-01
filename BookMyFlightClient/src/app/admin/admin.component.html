@@ -1,0 +1,25 @@
+<div class="card mx-3 py-3 border-round-3xl">
+    <p-tabView styleClass="tabview-custom mx-3" (onChange)="onTabChange($event)">
+        <p-tabPanel header="Flights">
+            <ng-template pTemplate="header">
+                <i class="pi" [ngClass]="{'pi-circle': !isActiveTab(0), 'pi-stop-circle': isActiveTab(0)}"></i>
+                <span class="mx-1">Flights</span>
+            </ng-template>
+            <app-edit-flights></app-edit-flights>
+        </p-tabPanel>
+        <p-tabPanel header="Bookings">
+            <ng-template pTemplate="header">
+                <i class="pi" [ngClass]="{'pi-circle': !isActiveTab(1), 'pi-stop-circle': isActiveTab(1)}"></i>
+                <span class="mx-1">Bookings</span>
+            </ng-template>
+            <app-edit-bookings></app-edit-bookings>
+        </p-tabPanel>
+        <!-- <p-tabPanel header="Offers">
+            <ng-template pTemplate="header">
+                <i class="pi" [ngClass]="{'pi-circle': !isActiveTab(2), 'pi-stop-circle': isActiveTab(2)}"></i>
+                <span class="mx-1">Offers</span>
+            </ng-template>
+            <app-edit-offers></app-edit-offers>
+        </p-tabPanel> -->
+    </p-tabView>
+</div>

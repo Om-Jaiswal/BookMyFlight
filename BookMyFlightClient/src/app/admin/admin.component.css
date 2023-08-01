@@ -1,0 +1,13 @@
+:host ::ng-deep {
+    
+    .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+        color: #000000;
+        padding: 0 1.15rem 1rem;
+    }
+
+    .p-tabview .p-tabview-nav li .p-tabview-nav-link:focus,
+    .p-tabview .p-tabview-nav li .p-tabview-nav-link:hover {
+        box-shadow: none;
+    }
+    
+}
